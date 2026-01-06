@@ -147,12 +147,20 @@ go-to: decrwest
 - @hugeeastincr: +400 East Relations (Not Working)
 - @bigeastincr: +100 East Relations (Not Working)
 - @mediumeastincr: +20 East Relations (Not Working)
+- @medsmalleastincr: +10 East Relations (Not Working)
+- @smalleastincr: +5 East Relations (Not Working)
+- @tinyeastincr: +1 East Relations (Not Working)
+- @returnsandbox: Reutrn to Sandbox
 
 @decreast
 
 - @hugeeastdecr: -400 East Relations (Not Working)
 - @bigeastdecr: -100 East Relations (Not Working)
 - @mediumeastdecr: -20 East Relations (Not Working)
+- @medsmalleastdecr: -10 East Relations (Not Working)
+- @smalleastdecr: -5 East Relations (Not Working)
+- @tinyeastdecr: -1 East Relations (Not Working)
+- @returnsandbox: Return to Sandbox
 
 @intersov
 
