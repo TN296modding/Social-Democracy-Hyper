@@ -20,6 +20,10 @@ What should our foreign policy priority be?
 - @improve_bel
 - @improve_lux
 - @improve_east
+- @improve_pol
+- @improve_cze
+- @east_ger_love
+- @improve_lit
 - @improve_soviet
 - @improve_soviet_eco
 - @customs_union
@@ -63,6 +67,7 @@ wip
 
 @improve_netfla
 title: Help connect important Flemish Nationalists with Dutch officials, as well as increase our relations with the <span style="color: #C8102E;">Neth</span><span style="color: #FFFFFF;">erl</span><span style="color #003DA5;">ands</span>
+subtitle: -0.5 Budget
 on-arrival: net_relation += 2; net_ger_love += 0.5; fla_net_uni += 0.2; fla_unrest += 0.05; budget -= 0.5;
 choose-if: fla_net_uni >= 0.1 and budget >= 0.5
 unavailable-subtitle: [? if fla_net_uni <= 0.09 : the Flemish Nationalists need a foothold before they can start interacting internationally ?] [? if budget <= 0.4 : We need more budget ?]
@@ -83,9 +88,34 @@ wip
 
 @improve_east
 title: Improve our relations with our eastern neighbors.
-on-arrival: east_relation += 2;
+on-arrival: pol_relation += 1; cze_relation += 1; sudeten_ger += 0.01; danzig_prog += 1; masuria_aut -= 0.01; silesia_aut -= 0.01; ger_pomerania_aut -= 0.01; pol_pomerania_ger += 0.01;
 
 We also aim to improve relations with our eastern neighbors, <span style="color: #DC143C;">Pol</span><span style="color: #FFFFFF;">and</span> and <span style="color: #11457E;">Czech</span><span style="color: #FFFFFF;">oslo</span><span style="color: #D7141A;">vakia</span>, who are rightfully terrified of German aggression. Hopefully we can convince them of our peaceful intentions.
+
+@improve_pol
+title: Improve our relations with Poland
+on-arrival: pol_relation += 2; danzig_prog += 2; masuria_aut -= 0.02; silesia_aut -= 0.02; ger_pomerania_aut -= 0.02; pol_pomerania_ger += 0.05; katowice_ger += 0.04
+
+wip
+
+@improve_cze
+title: Improve our relations with Czechoslovakia
+on-arrival: cze_relation += 2; sudeten_ger += 0.05
+
+wip
+
+@improve_lit
+title: Improve Relations with Lithuania
+on-arrival: lit_relation += 2; memel_ger += 0.03; viln_lit += 0.02;
+
+wip.
+
+@east_ger_love
+title: Discreetly support pro-german movements in the East.
+subtitle: -1 Budget
+on-arrival: budget -= 1; memel_ger += 0.05; viln_lit += 0.01; sudeten_ger += 0.07; pol_pomerania_ger += 0.06; katowice_ger += 0.02
+
+wip.
 
 @improve_soviet_eco
 title: Expand our exports to the <span style="color: #750e0e;">**Soviet Union**</span>.
