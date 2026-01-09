@@ -110,7 +110,7 @@ go-to: incrwest
 - @medsmallwestdecr: -10 West Relations 
 - @smallwestdecr: -5 West Relations
 - @tinywestdecr: -1 West Relations 
-- @returnsandobx: Return to Sandbox
+- @returnsandbox: Return to Sandbox
 
 @hugewestdecr
 on-arrival: west_relation -= 400
@@ -308,7 +308,7 @@ wip
 - @increu: Increase progress to forming the EU (Not Working)
 - @decreu: Decrease progress to forming the EU (Not Working)
 - @formeu: Form the EU (Not Working)
-- @returnsandbox: Return to the Sandobx
+- @returnsandbox: Return to the sandbox
 
 @increu
 
@@ -330,7 +330,7 @@ wip
 - @incrprucon: Increase progress for the Prussian Concordat (Not Working)
 - @decrprucon: Decrease progress for the Prussian Concordat (Not Working)
 - @formprucon: Form the Prussian Concordat (Not Working)
-- @returnsandbox: Return to Sandobx
+- @returnsandbox: Return to sandbox
 
 @incrcon
 
