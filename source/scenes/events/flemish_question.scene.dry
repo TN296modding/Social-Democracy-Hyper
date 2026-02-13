@@ -6,7 +6,7 @@ view-if: belgium_dissolved = 1 and fla_timer = 0 and fla_qst_resolved = 0
 priority: 1
 max-visits: 1
 
-- @fla_indpendent: Flanders Independent!
+- @fla_independent: Flanders Independent!
 - @fla_dutch: Flanders joins the Netherlands!
 - @fla_ger: Flanders joins Germany!
 
