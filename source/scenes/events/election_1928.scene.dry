@@ -1231,6 +1231,7 @@ if (!Q.lvp_formed) Q.economic_minister_party = Q.ddp_name;
 if (Q.lvp_formed) Q.finance_minister_party = 'LVP'; 
 if (!Q.lvp_formed) Q.finance_minister_party = 'DVP';
 Q.agriculture_minister_party = 'Z';
+Q.transport_minister_party = 'Z';
 
 Q.ddp_in_popular_front = 0;
 
@@ -3990,6 +3991,17 @@ go-to: ministries
 
 Julius Leber of the <span style="color: #c00000;">**SPD**</span> has been appointed Reichswehr Minister.
 
+@transport
+title: Transport Ministry
+subtitle: The Ministry responsible for transport is not typically our domain; This will use a fair amount of our leverage
+unavailable-subtitle: [? if leverage < 15: We don't have enough leverage ?]
+tags: mins_1928
+choose-if: leverage >= 15
+view-if: transport_minister_party != "SPD"
+on-arrival: leverage -= 15; transport_minister_party = "SPD"; reichswehr_minister = "Bauer"; 
+go-to: ministries
+
+Gustav Bauer of the <span style="color: #c00000;">**SPD**</span> has been appointed Transport Minister
 
 @no_more
 title: No more ministries.
