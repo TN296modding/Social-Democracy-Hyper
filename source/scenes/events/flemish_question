@@ -2,7 +2,7 @@ title: The question of Flanders
 subtitle: Flanders decides its direction
 on-arrival: fla_qst_resolved = 1
 tags: event
-view-if: belgium_dissolved = 1 and fla_timer = 0 
+view-if: belgium_dissolved = 1 and fla_timer = 0 and fla_qst_resolved = 0
 priority: 1
 max-visits: 1
 
@@ -36,3 +36,9 @@ choose-if: ger_annex_net = 1
 
 @annexfla
 on-arrival: ger_annex_fla = 1
+
+annex flanders wip
+
+@refusefla
+
+don't annex flanders wip
