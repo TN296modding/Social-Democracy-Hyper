@@ -27,7 +27,7 @@ on-arrival: fra_annex_wal = 1
 wip
 
 
-@fla_ger
+@wal_ger
 subtitle: Flanders wishes to unite with Germany
 choose-if: ger_annex_fla = 1
 
