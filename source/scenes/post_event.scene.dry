@@ -1050,10 +1050,10 @@ if ((Q.month_actions >= 1 && !Q.rubicon) || (Q.month_actions >= 4 && Q.rubicon))
         Q.unemployed += 0.1;
     }
     if Q.wal_timer >= 0 {
-        Q.wal_timer -= 1
+        Q.wal_timer -= 1;
     }
     if Q.fla_timer >= 0 {
-        Q.fla_timer -= 1
+        Q.fla_timer -= 1;
     }
     if (Q.inflation <= -5 && Q.unemployed < 20) {
         Q.unemployed += 0.1;
