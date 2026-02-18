@@ -270,7 +270,7 @@ IWW Unionised Farmworkers: [+ iww_rur_perc : trun_amnt +] ( ([+ iww_rur_perc +]*
 
 IWW Unionised Unemployed [+ iww_unm_perc : trun_amnt +] ( ([+ iww_unm_perc +]*100) % ) 
 
-Christian Unionised Workers [+ chrun_tot_perc : trn_amnt +] ( ([+ chrun_tot_perc +]*100) % )
+Christian Unionised Workers [+ chrun_tot_perc : trun_amnt +] ( ([+ chrun_tot_perc +]*100) % )
 
 @paramilitaries
 on-arrival: {!
