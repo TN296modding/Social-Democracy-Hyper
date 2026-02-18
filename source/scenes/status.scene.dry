@@ -151,7 +151,16 @@ Inflation: [+ inflation_2 +]%<br>
 Economic growth: [+ economic_growth_2 +]%
 
 @politics
-on-arrival: trun_ind_perc_dis = trun_ind_perc * 100; trun_rur_perc_dis = trun_rur_perc * 100; trun_nmc_perc_dis = trun_nmc_perc * 100; iww_ind_perc_dis = iww_ind_perc * 100; iww_nmc_perc_dis = iww_nmc_perc * 100; iww_rur_perc_dis = iww_rur_perc * 100; iww_unm_perc_dis = iww_unm_perc * 100; chrun_tot_perc_dis = chrun_tot_perc * 100;
+on-arrival: {!
+Q.trun_ind_perc_dis = (Q.trun_ind_perc * 100).toFixed(3);
+Q.trun_rur_perc_dis = (Q.trun_rur_perc * 100).toFixed(3);
+Q.trun_nmc_perc_dis = (Q.trun_nmc_perc * 100).toFixed(3);
+Q.iww_ind_perc_dis = (Q.iww_ind_perc * 100).toFixed(3);
+Q.iww_nmc_perc_dis = (Q.iww_nmc_perc * 100).toFixed(3);
+Q.iww_rur_perc_dis = (Q.iww_rur_perc * 100).toFixed(3);
+Q.iww_unm_perc_dis = (Q.iww_unm_perc * 100).toFixed(3);
+Q.chrun_tot_perc_dis = (Q.chrun_tot_perc * 100).toFixed(3);
+!}
 
 = Inter-party Relations
 
