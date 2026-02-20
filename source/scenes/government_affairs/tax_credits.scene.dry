@@ -16,7 +16,7 @@ Tax Deduction 1 DESC (WIP)
 - @union_deductions2
 - @upper_class_charity_deduction
 - @upper_class_welfare_deduction
-- @impoverished_tax_exemption: wip
+- @impoverished_tax_exemption
 - @volunteering_credit: wip
 - @new_business_credit: wip
 - @cooperatives_credit: wip
@@ -65,8 +65,14 @@ on-arrival: welfare_cost -= 0.25 if ucwddc = 0; welfare_cost -= 0.15 if ucwddc =
 description
 
 @volunteering_credit
+title: Provide a small cash bonus for people who volunteer for registered organisations
+subtitle: -1 budget
+unavailable-subtitle: Not enough budget
+choose-if: budget >= 1
+max-visits: 1
+on-arrival: budget -= 1; charity += 1; workers_spd += 3; unemployed_spd += 3; ddp_relation += 5; z_relation += 2; dvp_relation -= 3; ddp_left += 1; dvp_right -= 1; new_middle_spd += 2; catholics_spd += 1;
 
-wip
+description
 
 @new_business_credit
 
@@ -76,6 +82,12 @@ wip
 
 wip
 
-@impoverished_tax_credit
+@impoverished_tax_exemption
+title: Provide a tax exemption for the impoverished
+subtitle: -2 budget
+unavailable-subtitle: Not enough budget
+choose-if: budget >= 2
+max-visits: 1
+on-arrival: workers_spd += 7; unemployed_spd += 7; rural_spd += 1; catholics_spd += 1; z_relation -= 10; dvp_relation -= 15; ddp_relation -= 5; dvp_right += 3; ddp_right += 1; lvp right += 2; ddp_cohesion -= 2
 
-wip
+Description
