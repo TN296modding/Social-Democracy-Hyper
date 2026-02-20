@@ -119,3 +119,7 @@ on-arrival: catholics_spd += 6*(1-dissent); resources -= 1
 We have increased our campaigning among Catholics.
 
 - @unionise_cat: WIP this does nothing
+
+@unionise_cat
+
+wip
