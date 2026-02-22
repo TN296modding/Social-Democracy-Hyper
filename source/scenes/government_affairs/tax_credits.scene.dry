@@ -100,6 +100,6 @@ subtitle: -2 budget
 unavailable-subtitle: Not enough budget
 choose-if: budget >= 2
 max-visits: 1
-on-arrival: workers_spd += 7; unemployed_spd += 7; rural_spd += 1; catholics_spd += 1; z_relation -= 10; dvp_relation -= 15; ddp_relation -= 5; dvp_right += 3; ddp_right += 1; lvp right += 2; ddp_cohesion -= 2
+on-arrival: workers_spd += 7; unemployed_spd += 7; rural_spd += 1; catholics_spd += 1; z_relation -= 10; dvp_relation -= 15; ddp_relation -= 5; dvp_right += 3; ddp_right += 1; lvp_right += 2; ddp_cohesion -= 2
 
 Description
