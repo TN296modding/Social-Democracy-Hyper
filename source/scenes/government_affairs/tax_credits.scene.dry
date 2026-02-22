@@ -75,12 +75,24 @@ on-arrival: budget -= 1; charity += 1; workers_spd += 3; unemployed_spd += 3; dd
 description
 
 @new_business_credit
+title: Provide a small tax credit to new businesses
+subtitle: -1 budget
+unavailable-subtitle: Not enough budget
+choose-if: budget >= 1
+max-visits: 1
+on-arrival: budget -= 1; old_middle_spd += 5; new_middle_spd += 3; ddp_relation += 12; z_relation += 5; dvp_relation += 15; ddp_left += 1; dvp_left += 3; ddp_cohesion += 1;
 
-wip
+Description
 
 @cooperatives_credit
+title: Provide a small tax credit for Co-ops
+subtitle: -1 budget
+unavailable-subtitle: Not enough budget
+choose-if: budget >= 1
+max-visits: 1
+on-arrival: budget -= 1; cooperatives += 1; workers_spd += 3; unemployed_spd += 1;
 
-wip
+dsecription
 
 @impoverished_tax_exemption
 title: Provide a tax exemption for the impoverished
