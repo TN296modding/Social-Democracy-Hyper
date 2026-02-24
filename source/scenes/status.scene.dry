@@ -258,7 +258,19 @@ Q.chrun_tot_perc_dis = (Q.chrun_tot_perc * 100).toFixed(3);
 
 {!<span class="tooltip-text" title="Reformists are pragmatic participants in government, and seek to expand the welfare state and defend democracy.">Reformist</span>!} strength: [+ reformist_strength : strength +], dissent: [+ reformist_dissent : dissent +]
 
-{!<span class="tooltip-text" title="Left Nationalists are in favour of Social Democratic policies, in a similar vein to the reformists, however they also have views which are much more socially right-wing. They split from the SPD in 1926 to form the ASPD">Left Nationals</span>!} [? if: aspd_j_spd = 1 : [? if leftnat_joined = 1 : (Rejoined) ?] strength: [+ left_nat_strength : strength +], dissent: [+ left_nat_dissent : dissent +] ?]
+{!<span class="tooltip-text" title="Left Nationalists are in favour of Social Democratic policies, in a similar vein to the reformists, however they also have views which are much more socially right-wing. They split from the SPD in 1926 to form the ASPD">Left Nationals</span>!} [? if aspd_j_spd = 1 : Status: ASPD Rejoined ?] [? if aspd_j_spd = 0 : Status: ASPD Independent ?] strength: [+ left_nat_strength : strength +], dissent: [+ left_nat_dissent : dissent +]
+
+Seeheimer (Business) strength: [+ business_strength : strength +], dissent: [+ business_dissent : dissent +] 
+
+Rural WIP
+
+Liberal WIP
+
+Rightcom WIP
+
+Leftcom WIP
+
+Left Christian WIP
 
 = Other
 
@@ -270,7 +282,7 @@ ADGB Unionised Industrial Workers: [+ trun_ind_perc : trun_amnt +] ( [+ trun_ind
 
 AfA-Bund Unionised New Middle Class: [+ trun_nmc_perc : trun_amnt +] ( [+ trun_nmc_perc_dis +] % )
 
-ADGB Unionised Farmworkers: [+ trun_rur_perc : trun_amnt +] ( [+ trun_rur_perc_dis +]* % )
+ADGB Unionised Farmworkers: [+ trun_rur_perc : trun_amnt +] ( [+ trun_rur_perc_dis +] % )
 
 IWW Unionised Industrial Workers: [+ iww_ind_perc : trun_amnt +] ( [+ iww_ind_perc_dis +] % )
 
