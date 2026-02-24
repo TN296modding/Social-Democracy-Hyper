@@ -6,7 +6,7 @@ Q.kaas_explode_seen = 1;
 
 Q.catholics_z -= 3;
 
-if (Q.z_relation >= 70) Q.joos_unlock = 1;
+if (Q.z_relation >= 70 && Q.left_chris_spd == 0) Q.joos_unlock = 1;
 if (Q.chancellor == "Brüning") Q.bruning_unlock = 1;
 if (Q.prussia_leader == "Stegerwald" || Q.catholics_z_normalized < 40 || Q.z_votes - Q.bvp_votes < 10) Q.stegerwald_unlock = 1;
 if (!Q.stegerwald_unlock && !Q.bruning_unlock && !Q.joos_unlock) Q.guerard_unlock = 1;
@@ -37,7 +37,7 @@ Despite pleads from his party members and colleagues, Kaas has officially resign
 
 @joos
 subtitle: Joos is part of the Catholic worker groups, and the current deputy leader of the party responsible for organizational work.
-unavailable-subtitle: [? if z_relation < 70: Our relations are not good enough. ?][? if bruning_unlock: Brüning is able to overshadow Joos due to his status as Chancellor. ?][? if stegerwald_unlock: Stegerwald is able to secure the votes of the party's workers. ?]
+unavailable-subtitle: [? if z_relation < 70: Our relations are not good enough. ?][? if bruning_unlock: Brüning is able to overshadow Joos due to his status as Chancellor. ?][? if stegerwald_unlock: Stegerwald is able to secure the votes of the party's workers. ?] [? if left_chris_spd = 1 : Joos is part of our party, and therefore cannot run ?]
 choose-if: joos_unlock
 on-arrival: z_leader = "Joos"; catholics_z -= 5; catholics_dvp += 3; catholics_lvp += 3; catholics_dnvp += 3 if dnvp_ideology == "Moderate"; catholics_spd += 5; workers_z += 5; z_relation += 10; zentrum_disintegration += 1; dvp_left += 1; ddp_left += 1; ddp_cohesion += 1; lvp_left += 1; fake_joos = 1
 face-image: img/portraits/Joseph_Joos.jpg
