@@ -51,7 +51,7 @@ Labor Minister Adam Stegerwald and Finance Minister Hermann Dietrich have devise
 
 @lautenbach_fail
 choose-if: lautenbach_failed
-on-arrival: reichsbank_policy_time = time + 12
+on-arrival: reichsbank_policy_time = time + 12; soviet_relation += 1
 
 Expectedly, the Lautenbach Plan has failed due to strong opposition from those who adhere to fiscal orthodoxy, which holds that deflation, despite its pain, is healthy because it weeds out inefficient producers. This contrasts with the Keynesian belief that a destructive second phase occurs, where economic recovery becomes possible but fails because of a collapse in investor confidence.
 
