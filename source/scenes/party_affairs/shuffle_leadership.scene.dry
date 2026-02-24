@@ -413,7 +413,7 @@ view-if: ddp_j_spd > 0 and n_advisors < 3
 - #lib_advisor
 
 @leftchris
-view-if: wirth_j_spd > 0 and n_advisors < 3
+view-if: left_chris_spd > 0 and n_advisors < 3
 
 - #chris_advisor
 
