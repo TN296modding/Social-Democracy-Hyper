@@ -116,10 +116,12 @@ on-arrival: workers_spd += 3*(1-dissent); unemployed_spd += 3*(1-dissent); rural
 The WTB plan has become a popular rallying cry for our party. The workers are eager to go back to work, and that is exactly what the plan promises. [? if not wtb_implemented: However, many still believe that the plan is merely an empty slogan and will remain skeptical until we actually implement it. ?]
 
 @chris
+view-if: left_chris_spd = 1
 
 wip
 
 @busilib
+view-if: ddp_j_spd = 1 or business_j_spd
 
 wip
 
