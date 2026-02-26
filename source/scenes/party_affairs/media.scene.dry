@@ -18,6 +18,8 @@ The <span style="color: #c00000;">**SPD**</span> runs a veritable media empire, 
 - @radio_2
 - @radio_3
 - @radio_4
+- @wip1: Produce newsreel films
+- @wip2: Produce political films
 - @return: We should not do anything with media at the moment.
 - @easy_discard
 - @cancel_advisor_action
@@ -80,3 +82,13 @@ view-if: radio > 3 and (radio >= 6 or year >= 1932) and radio <= 9
 on-arrival: radio += 1; resources -= 1; new_middle_spd += 3*(1 - dissent); old_middle_spd += 2*(1 - dissent); workers_spd += 3*(1 - dissent); rural_spd += 2*(1 - dissent); unemployed_spd += 2*(1-dissent); socialism += 2*(1 - dissent); nationalism -= 1*(1 - dissent); nationalism -= 2*(1 - dissent)*(pacifism-2) if pacifism > 2; pro_republic += 2*(1-dissent)
 
 We are continuing to invest in our radio stations. Both commercial and political radio are becoming more prevalent, making it harder to spread our message amidst the competition.
+
+@wip1
+view-if: wip = 1
+
+wip
+
+@wip2
+view-if: wip = 2
+
+wip
