@@ -15,6 +15,7 @@ We receive dues at the end of each year, but can adjust them throughout. Low par
 - @maintain: Maintain our current dues.
 - @reduce: Reduce dues.
 - @increase: Increase dues.
+- @emergency_fundraising: Go for a round of emergency fundraising - This will reduce our support somewhat
 - @easy_discard
 
 @maintain
@@ -39,3 +40,8 @@ Our members grumble at this, and some of the less committed members leave. But n
 
 [? if unemployed >= 15 : Because of the presently high unemployment, our members are feeling the extra burden hard. ?] The higher dues will make it more difficult for the <span style="color: #c00000;">**SPD**</span> to expand electorally.
 
+@emergency_fundraising
+view-if: wip = 1
+on-arrival: workers_spd -= 1; new_middle_spd -= 1; old_middle_spd -= 1; rural_spd -= 1; unemployed_spd -= 1; resources += (dues / 2)
+
+wip
