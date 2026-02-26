@@ -26,6 +26,7 @@ The <span style="color: #c00000;">**SPD**</span> is torn between many different 
 - @wip5: rural wip
 - @wip6: liberal wip
 - @wip7: business wip
+- @wip8: left christian
 - @easy_discard
 
 @class_struggle
@@ -120,6 +121,11 @@ view-if: wip = 1
 wip
 
 @wip7
+view-if: wip = 1
+
+wip
+
+@wip8
 view-if: wip = 1
 
 wip
