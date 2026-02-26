@@ -19,6 +19,7 @@ The <span style="color: #c00000;">**SPD**</span> cannot govern by itself yet. Be
 - @kpd: Work towards repairing relationships with the <span style="color: #700000;">Communist Party</span>.
 - @dnvp: Open dialogue with [? if dnvp_leader != "Lambach": Treviranus and the <span style="color: #0087DC;">People's Conservatives</span>?][? if dnvp_leader == "Lambach": Lambach and the <span style="color: #6D5298;">Christian Socials</span>?] of the <span style="color: #3E88B3;">**DNVP**</span>.
 - @nsdap: Establish contact with Strasser and the <span style="color: #7A3C00;">Nazi Party</span>'s left wing.
+- @splits: WIP improve relations with the split parties
 - @spd_alone: The <span style="color: #c00000;">SPD</span> can stand alone for now.
 - @easy_discard
 
@@ -432,3 +433,8 @@ The <span style="color: #3E88B3;">**Stahlhelm**</span> and <span style="color: #
 Whether it is because we *cannot* or *will not*, we do not make ties with other parties at this moment.
 
 - @return: Continue...
+
+@splits
+view-if: wip = 1
+
+wip
