@@ -6,6 +6,7 @@ view-if: spd_in_government = 1 and (agriculture_minister_party = "SPD") and agri
 card-image: img/portraits/BaadeFritz.jpg
 tags: govt_affairs, cabinet
 #subtitle: Issues of farmer financing, grain purchasing, and land reform.
+### Wip, Electrify rural areas, provide debt relief during the Depression, fertilization projects to make previously poor farming land fertile, like land drainage and irrigation, add a rural_debt variable to track the debt and foreclosure rate of small farmers, 
 
 = Agricultural Policy
 
