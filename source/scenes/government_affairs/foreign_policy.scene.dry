@@ -24,6 +24,45 @@ What should our foreign policy priority be?
 - @improve_cze
 - @east_ger_love
 - @improve_lit
+- @improve_spa
+- @intervene_spa_civ_war
+- @improve_por
+- @improve_swi
+- @improve_aus
+- @improve_yug
+- @improve_ita
+- @improve_alb
+- @improve_gre
+- @improve_bul
+- @improve_rom
+- @improve_brit
+- @improve_fran
+- @improve_ire
+- @improve_lat
+- @improve_est
+- @improve_fin
+- @improve_swe
+- @improve_nor
+- @improve_ice
+- @improve_bel
+- @improve_ukr
+- @improve_geo
+- @improve_che
+- @improve_azr
+- @improve_arm
+- @improve_san_mar
+- @improve_vat
+- @improve_lic
+- @improve_and
+- @improve_mon
+- @improve_micro
+- @improve_former_sov
+- @improve_scandi
+- @improve_baltics
+- @improve_balkans
+- @improve_south_europe
+- @improve_north_europe
+- @improve_isles
 - @improve_soviet
 - @improve_soviet_eco
 - @customs_union
@@ -33,6 +72,14 @@ What should our foreign policy priority be?
 - @expose
 - @european_union
 - @european_union_2
+- @expand_eu_west: Expand the EU to include Spain, Portugal, Switzerland, and Austria
+- @expand_eu_east: Expand the EU to include Yugoslavia, Albania, Greece, Bulgaria, and Romania
+- @expand_eu_baltics_nordics: Expand the EU to include Lithuania, Latvia, Estonia, Finland, Sweden, Norway, Denmark, and Iceland
+- @expand_eu_soviet_dissolved: Expand the EU to include Belarus, and Ukraine
+- @expand_eu_caucasia: Expand the EU to include Georgia, Chechnya, Azerbaijan, and Armenia
+- @expand_eu_isles: Expand the EU to include Britain, and Ireland
+- @expand_eu_microstates: Expand the EU to include San Marino, the Vatican, Liechtenstein, Andorra, and Monaco
+- @federalize_eu: Federalize the EU into one state
 - @concordat_negotiate
 - @concordat
 - @support_austria
@@ -305,7 +352,7 @@ Forming a "<span style="color: #FFDD00;">United States</span> of <span style="co
 @european_union_2
 title: We can sign a treaty to form a <span style="color: #001489;">European</span> <span style="color: #FFDD00;">Union</span>!
 view-if: west_relation >= 5 and east_relation >= 4 and eu_progress >= 3 and not eu and france_left_seen
-on-arrival: eu = 1; unemployed -= 2 if unemployed >= 10; inflation += 2 if inflation <= -2; inflation -= 1 if inflation >= 4.5; workers_spd += 5*(1-dissent); new_middle_spd += 5*(1-dissent); old_middle_spd += 5*(1-dissent); rural_spd += 4*(1-dissent); catholics_spd += 4*(1-dissent); unemployed_spd += 4*(1-dissent); pro_republic += 5; nationalism -= 5; budget += 1; ddp_left += 3; ddp_cohesion += 3; ddp_relation += 10; lvp_relation += 5; foreign_goal_spd_peoples += 1; economic_growth += 1 if economic_growth < 3; kpd_coalition_dissent += 1; kpd_relation -= 10
+on-arrival: eu = 1; unemployed -= 2 if unemployed >= 10; inflation += 2 if inflation <= -2; inflation -= 1 if inflation >= 4.5; workers_spd += 5*(1-dissent); new_middle_spd += 5*(1-dissent); old_middle_spd += 5*(1-dissent); rural_spd += 4*(1-dissent); catholics_spd += 4*(1-dissent); unemployed_spd += 4*(1-dissent); pro_republic += 5; nationalism -= 5; budget += 1; ddp_left += 3; ddp_cohesion += 3; ddp_relation += 10; lvp_relation += 5; foreign_goal_spd_peoples += 1; economic_growth += 1 if economic_growth < 3; kpd_coalition_dissent += 1; kpd_relation -= 10; ger_eu = 1; net_eu = 1 if ger_annex_net = 0 and net_comintern = 0; bel_eu = 1 if belgium_dissolved = 0 and bel_comintern = 0; lux_eu = 1 if ger_annex_lux = 0; fra_eu = 1 if fra_comintern = 0; pol_eu if pol_comintern = 0; cze_eu = 1 if cze_comintern = 0; ita_eu = 1 if ita_fasc = 0 and ita_comintern = 0;
 max-visits: 1
 achievement: eu
 
