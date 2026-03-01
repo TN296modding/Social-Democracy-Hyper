@@ -33,7 +33,7 @@ Small Business tax rates: [+ small_bus_tax_rates: taxation +]
 - @raise_poor
 - @raise_overall: Increase overall taxes.
 - @cut_rich
-- @cut_middle: Cut taxes for the Middle Class
+- @cut_middle
 - @cut_poor
 - @cut_overall: Cut overall taxes.
 - @raise_progressive: Make the tax system more progressive by raising taxes on the rich and cutting them for the poor.
@@ -58,6 +58,13 @@ on-arrival: upper_tax_rates += 1; capital_strike_progress += 1; capital_strike_p
 
 Raising taxes on the rich is popular among our base, but it alienates the bourgeoisie. Increasing taxes also decreases economic demand, which may lead to more unemployment. [? if in_grand_coalition or in_weimar_coalition: Furthermore, the liberals in our governing coalition will also face backlash from their support base for participating in the government that increases their own taxes. ?]
 
+@raise_middle
+title: Raise taxes on the middle class
+subtitle: +2 budget. This will greatly anger the Bourgeois-Liberal parties.
+choose-if: middle_tax_rates <= 5
+on-arrival: middle_tax_rates += 1; capital_strike_progress += 1; new_middle_spd -= 7; old_middle_spd -= 7; ddp_relation -= 10; z_relation -= 15; dvp_relation -= 20; coalition_dissent += 3 if in_grand_coalition = 1; coaltion_dissent += 2 if in_weimar_coaltion; coalition_dissent += 1 if in_social_christian_coaltion; coalition_dissent += 3 if in_social_liberal_coaltion; new_middle_ddp -= 3 if in_grand_coaltion = 1 and coaltion_dissent <= 4; new_middle_dvp -= 3 if in_grand_coalition and coalition dissent <=4; kpd_relation += 10; budget += 2
+
+Raising taxes on the middle class is popular with nobody except the KPD, who praises us for 'Reducing the power of the Petit-Bourgeois'. Our [? if in_grand_coalition or in_weimar_coaltion : Bourgeois-Liberal allies are understandably enraged with us and are threatening to bring down the coaltion, especially after some of their already-small support base deserts them ?].
 
 @raise_poor
 title: Raise consumption taxes, which disproportionately affect the poor.
@@ -86,6 +93,10 @@ on-arrival: budget -= 2; lower_tax_rates -= 1; workers_spd += 5*(1-dissent); une
 
 Our tax cuts disproportionately benefit the poor and working class.
 
+@cut_middle
+title: Cut taxes for the Middle Class
+
+wip
 
 @cut_rich
 title: Cut income taxes for the rich.
