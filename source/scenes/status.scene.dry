@@ -451,3 +451,11 @@ Diplomatic Leverage [+ diplo_lev +]
 Rural Affairs:
 
     Land Reform: [+ land_reform : land_reform +]
+
+    Agricultural Financing: [+ agricultural_finance : agri_financing +]
+
+    Food Prices:
+
+    State Buyer:
+
+    Food Market Nationalization: 
