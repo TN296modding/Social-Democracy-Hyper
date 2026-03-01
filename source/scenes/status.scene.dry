@@ -447,3 +447,7 @@ Diplomatic Leverage [+ diplo_lev +]
 @domestic_tab
 
 = Domestic Affairs
+
+Rural Affairs:
+
+    Land Reform: [+ land_reform : land_reform +]
