@@ -454,8 +454,8 @@ Rural Affairs:
 
     Agricultural Financing: [+ agricultural_finance : agri_financing +]
 
-    Food Prices:
+    Food Prices: [+ food_prices : food_prices +]
 
-    State Buyer:
+    State Buyer: [? if state_buyer = 0 : Not Established ?][? if state_buyer = 1 : Established ?]
 
-    Food Market Nationalization: 
+    Food Market Nationalization: wip
