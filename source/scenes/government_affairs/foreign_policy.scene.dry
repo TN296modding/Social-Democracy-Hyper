@@ -180,12 +180,35 @@ wip.
 @improve_spa
 title: Improve Relations with Spain
 subtitle: -1 Budget
-on-arrival: budget -= 1; spa_relation += 1
+on-arrival: budget -= 1; spa_relation += 3; spa_repub_str += 2
 
 wip
 
-@intervene_spa_civ_war
+@intervene_spa_civ_war_spd
+title: Provide aid to the Republicans in Spain
+view-if: sed_formed = 0 and spanish_civil_war = 1
+subtitle: -1 budget
+
+wip
+
+@intervene_spa_civ_war_sed
+title: Provide aid to the Communists in Spain
+view-if: sed_formed = 1 and spanish_civil_war = 1
+subtitle: -1 Budget
+
+wip
+
 @improve_por
+title: Improve relations with Portugal
+subtitle: -1 Budget
+on-arrival: por_relation += 2; por_repub_aid += 1
+
+@aid_por
+title: Aid the Portugeuse Republicans in their fight
+subtitle: -1 Budget
+view-if: por_civil_war = 1
+on-arrival: por_repub_aid += 2
+
 @improve_swi
 @improve_aus
 @improve_yug
@@ -213,7 +236,12 @@ wip
 @improve_san_mar
 @improve_vat
 @improve_lic
+
 @improve_and
+title: Improve relations with the Andorrans
+subtitle: -1 budget
+on-arrival: and_relation += 2
+
 @improve_mon
 @improve_micro
 @improve_former_sov
