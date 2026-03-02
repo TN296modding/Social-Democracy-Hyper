@@ -38,8 +38,6 @@ What should our foreign policy priority be?
 - @improve_gre
 - @improve_bul
 - @improve_rom
-- @improve_brit
-- @improve_fran
 - @improve_ire
 - @improve_lat
 - @improve_est
@@ -102,7 +100,7 @@ title: wip does nothing
 
 wip
 
-@improve_Fra
+@improve_fra
 title: wip does nothing
 
 wip
@@ -172,22 +170,21 @@ wip.
 
 @east_ger_love
 title: Discreetly support pro-german movements in the East.
-subtitle: -1 Budget
+subtitle: -1 budget
 on-arrival: budget -= 1; memel_ger += 0.05; viln_lit += 0.01; sudeten_ger += 0.07; pol_pomerania_ger += 0.06; katowice_ger += 0.02
 
 wip.
 
 @improve_spa
 title: Improve Relations with Spain
-subtitle: -1 Budget
-on-arrival: budget -= 1; spa_relation += 3; spa_repub_str += 2
+on-arrival: spa_relation += 2; spa_repub_str += 2
 
 wip
 
 @intervene_spa_civ_war_spd
 title: Provide aid to the Republicans in Spain
 view-if: sed_formed = 0 and spanish_civil_war = 1
-subtitle: -1 budget
+subtitle: -1 Budget
 
 wip
 
@@ -200,7 +197,6 @@ wip
 
 @improve_por
 title: Improve relations with Portugal
-subtitle: -1 Budget
 on-arrival: por_relation += 2; por_repub_aid += 1
 
 wip
@@ -209,33 +205,50 @@ wip
 title: Aid the Portugeuse Republicans in their fight
 subtitle: -1 Budget
 view-if: por_civil_war = 1
-on-arrival: por_repub_aid += 2
+on-arrival: por_repub_aid += 2; budget -= 1
 
 wip
 
 @improve_swi
 title: Improve relations with the Swiss
-subtitle: -1 budget
 on-arrival: swi_relation += 2; swi_neutral -= 0.05
 
 wip
 
 @improve_aus
 title: Improve relations with the Austrians
-subtitle: -1 budget
-on-arrival: aus_relation += 2; anschluss_prog += 0.75
+on-arrival: aus_relation += 2; anschluss_prog += 0.75;
 
 wip
 
 @improve_yug
+title: Improve relations with the Yugoslavians
+on-arrival: yug_relation += 2; yug_repub_aid += 1
+
+wip
+
 @improve_ita
+title: Improve relations with the Italians
+on-arrival: ita_relation += 2; ita_repub_aid += 1;
+
+wip
+
 @recognise_alb
+title: Recognise Albania's status as a country
+subtitle: This will anger neigbouring nations!
+on-arrival: alb_recognised = 1; ita_relation -= 1; yug_relation -= 1; gre_relation -= 1; alb_relation += 3
+
+wip
+
 @improve_alb
+title: Improve relations with Albania
+on-arrival: alb_relation += 2;
+
+wip
+
 @improve_gre
 @improve_bul
 @improve_rom
-@improve_brit
-@improve_fran
 @improve_ire
 @improve_lat
 @improve_est
@@ -249,9 +262,24 @@ wip
 @improve_che
 @improve_azr
 @improve_arm
+
 @improve_san_mar
+title: Improve relations with the Sammarinese
+on-arrival: san_mar_relation += 2
+
+wip
+
 @improve_vat
+title: Improve relations with the Holy See
+on-arrival: reichskonkordat_progress += 0.5; prussian_concordat_progress += 0.5; z_relation += 10; vat_relation += 2
+
+wip
+
 @improve_lic
+title: Improve relations with the Liechtensteiners
+on-arrival: lic_relation += 2
+
+wip
 
 @improve_and
 title: Improve relations with the Andorrans
