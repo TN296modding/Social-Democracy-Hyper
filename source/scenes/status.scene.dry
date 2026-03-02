@@ -426,21 +426,21 @@ Catholics: [? if dnef_formed: DNEF: [+ catholics_dnef_display +]%, ?]SPD: [+ cat
 
 <span style="color: #000091;">W</span><span style="color: #C8102E;">E</span><span style="color: #003DA5;">S</span><span style="color: #FFCD00;">T</span><span style="color: #51ADDA;">E</span><span style="color: #046A38;">R</span><span style="color: #F1BF00;">N</span> European Countries:
 
-France: [+ fra_relation : foreign_relations +] 
+<span style="color: #000091;">France</span>: [+ fra_relation : foreign_relations +] 
 
-Britain: [+ bri_relation : foreign_relations +] 
+<span style="color: #C8102E;">Britain</span>: [+ bri_relation : foreign_relations +] 
 
-Netherlands: [+ net_relation : foreign_relations +] 
+<span style="color: #003DA5;">Netherlands</span>: [+ net_relation : foreign_relations +] 
 
-Belgium: [+ bel_relation : foreign_relations +] 
+<span style="color: #FFCD00;">Belgium</span>: [+ bel_relation : foreign_relations +] 
 
-Luxembourg: [+ lux_relation : foreign_relations +] 
+<span style="color: #51ADDA;">Luxembourg</span>: [+ lux_relation : foreign_relations +] 
 
-Portugal: [+ por_relation : foreign_relations +]
+<span style="color: #046A38;">Portugal</span>: [+ por_relation : foreign_relations +]
 
-Spain: [+ spa_relation : foreign_relations +]
+<span style="color: #F1BF00;">Spain</span>: [+ spa_relation : foreign_relations +]
 
-<span style="color: #DC143C;">EAS</span><span style="color: #11457e;">TE</span>(SV)<span style="color: #CC0000;">RN</span> European Countries:
+<span style="color: #DC143C;">EAS</span><span style="color: #11457e;">TE</span><span style="color: #CC0000;">RN</span> European Countries:
 
 Poland: [+ pol_relation : foreign_relations +] 
 
