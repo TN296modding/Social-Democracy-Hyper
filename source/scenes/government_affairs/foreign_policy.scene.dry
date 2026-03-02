@@ -15,6 +15,8 @@ What should our foreign policy priority be?
 @fp_menu
 
 - @improve_west
+- @improve_bri
+- @improve_fra
 - @improve_low
 - @improve_net
 - @improve_bel
@@ -94,6 +96,16 @@ title: Improve our relations with the <span style="color: #002654;">Western</spa
 on-arrival: west_relation += 2; reparations_negotiation += 1
 
 The key to peace in Europe is a rapprochement between <span style="color: #002654;">France</span> and Germany. We are taking steps towards that rapprochement. [? if young_plan_seen == 0 : This is difficult to do when <span style="color: #002654;">France</span> is occupying a major portion of Germany's territory, but we are working on that part. ?]
+
+@improve_bri
+title: wip does nothing
+
+wip
+
+@improve_Fra
+title: wip does nothing
+
+wip
 
 @improve_low
 title: Improve our relations with the <span style="color: #003DA5;">Low</span> <span style="color: #FFCD00;">Coun</span><span style="color: #51ADDA;">tries</span>
