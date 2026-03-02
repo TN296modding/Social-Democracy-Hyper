@@ -203,14 +203,30 @@ title: Improve relations with Portugal
 subtitle: -1 Budget
 on-arrival: por_relation += 2; por_repub_aid += 1
 
+wip
+
 @aid_por
 title: Aid the Portugeuse Republicans in their fight
 subtitle: -1 Budget
 view-if: por_civil_war = 1
 on-arrival: por_repub_aid += 2
 
+wip
+
 @improve_swi
+title: Improve relations with the Swiss
+subtitle: -1 budget
+on-arrival: swi_relation += 2; swi_neutral -= 0.05
+
+wip
+
 @improve_aus
+title: Improve relations with the Austrians
+subtitle: -1 budget
+on-arrival: aus_relation += 2; anschluss_prog += 0.75
+
+wip
+
 @improve_yug
 @improve_ita
 @recognise_alb
