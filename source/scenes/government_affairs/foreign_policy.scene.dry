@@ -177,6 +177,53 @@ on-arrival: budget -= 1; memel_ger += 0.05; viln_lit += 0.01; sudeten_ger += 0.0
 
 wip.
 
+@improve_spa
+title: Improve Relations with Spain
+subtitle: -1 Budget
+on-arrival: budget -= 1; spa_relation += 1
+
+wip
+
+@intervene_spa_civ_war
+@improve_por
+@improve_swi
+@improve_aus
+@improve_yug
+@improve_ita
+@recognise_alb
+@improve_alb
+@improve_gre
+@improve_bul
+@improve_rom
+@improve_brit
+@improve_fran
+@improve_ire
+@improve_lat
+@improve_est
+@improve_fin
+@improve_swe
+@improve_nor
+@improve_ice
+@improve_blr
+@improve_ukr
+@improve_geo
+@improve_che
+@improve_azr
+@improve_arm
+@improve_san_mar
+@improve_vat
+@improve_lic
+@improve_and
+@improve_mon
+@improve_micro
+@improve_former_sov
+@improve_scandi
+@improve_baltics
+@improve_balkans
+@improve_south_europe
+@improve_north_europe
+@improve_isles
+
 @improve_soviet_eco
 title: Expand our exports to the <span style="color: #750e0e;">**Soviet Union**</span>.
 subtitle: A win for our economy and for our relationship with the <span style="color: #700000;">**KPD**</span>.
