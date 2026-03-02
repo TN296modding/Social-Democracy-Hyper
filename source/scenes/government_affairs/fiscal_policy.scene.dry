@@ -26,7 +26,7 @@ Big Business tax rates: [+ big_bus_tax_rates : taxation +]
 Small Business tax rates: [+ small_bus_tax_rates: taxation +]
 
 - @raise_rich: Increase taxes on the rich.
-- @raise_big_business: Increase taxes on big business
+- @raise_big_bus: Increase taxes on big business
 - @raise_business: Increase taxes on all business
 - @raise_small_bus: Increase taxes on small business
 - @raise_middle: Increase taxes on the Middle Class
