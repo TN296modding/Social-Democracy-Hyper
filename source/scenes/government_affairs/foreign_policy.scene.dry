@@ -564,6 +564,38 @@ The previous foreign ministry, despite its benevolent and peaceful face, was sec
 
 The Allies are grateful of our exposure and repudiation of militarism. Our partners in the coalition are less supportive.
 
+@expand_eu_west
+
+wip
+
+@expand_eu_east
+
+wip
+
+@expand_eu_baltics_nordics 
+
+wip
+
+@expand_eu_soviet_dissolved
+
+wip
+
+@expand_eu_caucasia
+
+wip
+
+@expand_eu_isles
+
+wip
+
+@expand_eu_microstates
+
+wip
+
+@federalize_eu
+
+wip
+
 @concordat_negotiate
 title: Negotiate a Concordat between the Germany and the Vatican.
 view-if: (prussian_concordat = 1 or not spd_prussia) and reichskonkordat = 0 and reichskonkordat_progress < 4
