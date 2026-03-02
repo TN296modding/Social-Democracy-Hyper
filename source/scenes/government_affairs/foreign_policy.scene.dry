@@ -45,6 +45,7 @@ What should our foreign policy priority be?
 - @improve_swe
 - @improve_nor
 - @improve_ice
+- @improve_den
 - @improve_blr
 - @improve_ukr
 - @improve_geo
@@ -283,9 +284,35 @@ on-arrival: est_relation += 2
 wip
 
 @improve_fin
+title: Improve relations with the Finnish
+on-arrival: fin_relation += 2
+
+wip
+
 @improve_swe
+title: Improve relations with the Swedish
+on-arrival: swe_relation += 2
+
+wip
+
 @improve_nor
+title: Improve relations with the Norweginas
+on-arrival: nor_relation += 2
+
+wip
+
 @improve_ice
+title: Improve relations with the Icelanders
+on-arrival: ice_relation += 2
+
+wip
+
+@improve_den
+title: Improve relations with the Danish
+on-arrival: den_relation += 2
+
+wip
+
 @improve_blr
 @improve_ukr
 @improve_geo
