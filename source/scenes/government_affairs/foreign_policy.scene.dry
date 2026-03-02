@@ -247,11 +247,41 @@ on-arrival: alb_relation += 2;
 wip
 
 @improve_gre
+title: Improve relations with the Greek
+on-arrival: gre_relation += 2;
+
+wip
+
 @improve_bul
+title: Improve relations with the Bulgarians
+on-arrival: bul_relation += 2; bul_repub_aid += 1
+
+wip
+
 @improve_rom
+title: Improve relations with the Romanians
+on-arrival: rom_relation += 2
+
+wip
+
 @improve_ire
+title: Improve relations with the Irish
+on-arrival: ire_relation += 2
+
+wip
+
 @improve_lat
+title: Improve relations with the Latvians
+on-arrival: lat_relation += 2
+
+wip
+
 @improve_est
+title: Improve relations with the Estonians
+on-arrival: est_relation += 2
+
+wip
+
 @improve_fin
 @improve_swe
 @improve_nor
