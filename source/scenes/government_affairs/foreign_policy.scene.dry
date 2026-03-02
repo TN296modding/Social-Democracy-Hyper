@@ -62,7 +62,7 @@ What should our foreign policy priority be?
 - @improve_scandi
 - @improve_baltics
 - @improve_balkans
-- @improve_south_europe
+- @improve_southwest_europe
 - @improve_north_europe
 - @improve_isles
 - @improve_soviet
@@ -373,14 +373,55 @@ subtitle: -1 budget
 on-arrival: and_relation += 2
 
 @improve_mon
+title: Improve relations with the Monocans
+on-arrival: mon_relation += 2
+
+wip
+
 @improve_micro
+title: Improve relations with the Micronations
+on-arrival: mon_relation += 1; and_relation += 1; lic_relation += 1; san_mar_relation += 1; lux_relation += 1; vat_relation += 1;
+
+wip
+
 @improve_former_sov
+title: Improve relations with the former Soviet states
+on-arrival: ukr_relation += 1; blr_relation += 1; geo_relation += 1; che_relation += 1; arm_relation += 1; azr_relation += 1;
+
+wip
+
 @improve_scandi
+title: Improve relations with the Scandinavian Nations
+on-arrival: nor_relation += 1; swe_relation += 1; fin_relation += 1; den_relation += 1; ice_relation += 1
+
+wip
+
 @improve_baltics
+title: Improve relations with the Baltic Nations
+on-arrival: lit_relation += 1; lat_relation += 1; est_relation += 1
+
+wip
+
 @improve_balkans
-@improve_south_europe
+title: Improve relations with the Balkan nations
+on-arrival: yug_relation += 1; alb_relation += 1; bul_relation += 1; cze_relation += 1; rom_relation += 1; gre_relation += 1; ukr_relation += 1 if sov_dissolved = 1;
+
+wip
+
+@improve_southwest_europe
+title: Improve relations with Southwest Europe
+on-arrival: ita_relation += 1; spa_relation += 1; por_relation += 1; vat_relation += 1; san_mar_relation += 1;
+
+wip
+
 @improve_north_europe
+title: Improve relations with non-scandinavian Northern Europe
+on-arrival: bri_relation += 1; ire_relation += 1; net_relation += 1; bel_relation += 1; lux_relation += 1; pol_relation += 1;
+
+wip
+
 @improve_isles
+on-arrival: bri_relation += 1.5; ire_relation += 1.5; ice_relation += 1.5;
 
 @improve_soviet_eco
 title: Expand our exports to the <span style="color: #750e0e;">**Soviet Union**</span>.
