@@ -5148,6 +5148,27 @@ if (Q.unemployed <= Q.soziale_marktwirtschaft_start - 10) {
     this.achieve('soziale_marktwirtschaft');
 }
 
+/// my stuff
+/// second barrier
+/// third barrier
+/// fourth barrier
+Q.west_relation = ((Q.bri_relation/2) + (Q.fra_relation/2));
+if (Q.in_weimar_coalition == 1 && Q.pro_republic >= 60) {
+    Q.new_middle_ddp += 0.1;
+}
+if (Q.in_grand_coalition == 1 && Q.pro_republic >= 70 && (Q.dvp_left - Q.dvp_right) >= 10) {
+    Q.new_middle_ddp += 0.1;
+    Q.old_middle_dvp += 0.1;
+}
+if (Q.in_social_liberal_coalition == 1 && Q.pro_republic >= 75) {
+    Q.catholics_ddp += 0.1;
+    Q.workers_z -= 0.1;
+}
+/// fourth barrier
+/// third barrier
+/// second barier
+/// my stuff
+
 if (!(Q.year == 1928 && Q.month <= 1)) {
     for (const key in q) {
       if ((key.startsWith("game_achievement") || key.startsWith("achievement")) && q[key] === 1) {
