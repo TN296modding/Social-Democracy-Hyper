@@ -424,11 +424,11 @@ Catholics: [? if dnef_formed: DNEF: [+ catholics_dnef_display +]%, ?]SPD: [+ cat
 
 = Foreign Relations
 
-<span style="color: #000091;">W</span><span style="color: #C8102E;">E</span><span style="color: #003DA5;">S</span><span style="color: #FFCD00;">T</span><span style="color: #51ADDA;">E</span><span style="color: #046A38;">R</span><span style="color: #F1BF00;">N</span> European Countries:
+<span style="color: #000091;">W</span><span style="color: #C8102E;">e</span><span style="color: #003DA5;">s</span><span style="color: #FFCD00;">t</span><span style="color: #51ADDA;">e</span><span style="color: #046A38;">r</span><span style="color: #F1BF00;">n</span> European Countries:
 
-<span style="color: #000091;">France</span>: [+ fra_relation : foreign_relations +] 
+<span style="color: #000091;">France</span>: [? if fra_relation <= -3 : {!<span style="color: #FF0000;">!}[+ fra_relation : foreign_relations +]{!</span>!} ?][? if fra_relation >= -2 and fra_relation <= 2 : {!<span style="color: #FFE000;">!}[+ fra_relation : foreign_relations +]{!</span>!} ?][? if fra_relation >= 3 : {!<span style="color: #00B300;">!}[+ fra_relation : foreign_relations +]{!</span>!} ?]
 
-<span style="color: #C8102E;">Britain</span>: [+ bri_relation : foreign_relations +] 
+<span style="color: #C8102E;">Britain</span>: [? if bri_relation <= -3 : {!<span style="color: #FF0000;">!}[+ bri_relation : foreign_relations +]{!</span>!} ?][? if bri_relation >= -2 and bri_relation <= 2 : {!<span style="color: #FFE000;">!}[+ bri_relation : foreign_relations +]{!</span>!} ?][? if bri_relation >= 3 : {!<span style="color: #00B300;">!}[+ bri_relation : foreign_relations +]{!</span>!} ?]
 
 <span style="color: #003DA5;">Netherlands</span>: [+ net_relation : foreign_relations +] 
 
@@ -440,7 +440,7 @@ Catholics: [? if dnef_formed: DNEF: [+ catholics_dnef_display +]%, ?]SPD: [+ cat
 
 <span style="color: #F1BF00;">Spain</span>: [+ spa_relation : foreign_relations +]
 
-<span style="color: #DC143C;">EAS</span><span style="color: #11457e;">TE</span><span style="color: #CC0000;">RN</span> European Countries:
+<span style="color: #DC143C;">Eas</span><span style="color: #11457e;">te</span><span style="color: #CC0000;">rn</span> European Countries:
 
 <span style="color: #DC143C;">Poland</span>: [+ pol_relation : foreign_relations +] 
 
@@ -448,7 +448,7 @@ Catholics: [? if dnef_formed: DNEF: [+ catholics_dnef_display +]%, ?]SPD: [+ cat
 
 <span style="color: #CC0000;">Soivet Union</span>: [+ soviet_relation : foreign_relations +]
 
-<span style="color: #FFB81C;">BA</span><span style="color: #A4343A;">LT</span><span style="color: #0072CE;">IC</span> Countries:
+<span style="color: #FFB81C;">Ba</span><span style="color: #A4343A;">lt</span><span style="color: #0072CE;">ic</span> Countries:
 
 <span style="color: #FFB81C;">Lithuania</span>: [+ lit_relation : foreign_relations +] 
 
@@ -480,19 +480,19 @@ Catholics: [? if dnef_formed: DNEF: [+ catholics_dnef_display +]%, ?]SPD: [+ cat
 
 <span style="color: #FF9E1B;">Armenia</span>: [+ arm_relation : foreign_relations +]
 
-(YU)B(BU)a(HU)l(AL)k(RO)a(GR)n Countries:
+<span style="color: #003893;">B</span><span style="color: #00966E;">a</span><span style="color: #477050;">l</span><span style="color: #DA291C;">k</span><span style="color: #FCD116;">a</span><span style="color: #0D5EAF;">n</span> Countries:
 
-Yugoslavia: [+ yug_relation : foreign_relations +]
+<span style="color: #003893;">Yugoslavia</span>: [+ yug_relation : foreign_relations +]
 
-Bulgaria: [+ bul_relation : foreign_relations +]
+<span style="color: #00966E;">Bulgaria</span>: [+ bul_relation : foreign_relations +]
 
-Hungary: [+ hun_relation : foreign_relations +]
+<span style="color: #477050;">Hungary</span>: [+ hun_relation : foreign_relations +]
 
-Albania: [+ alb_relation : foreign_relations +]
+<span style="color: #DA291C;">Albania</span>: [+ alb_relation : foreign_relations +]
 
-Romania: [+ rom_relation : foreign_relations +]
+<span style="color: #FCD116;">Romania</span>: [+ rom_relation : foreign_relations +]
 
-Greece: [+ gre_relation : foreign_relations +]
+<span style="color: #0D5EAF;">Greece</span>: [+ gre_relation : foreign_relations +]
 
 Other Countries:
 
