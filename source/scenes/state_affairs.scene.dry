@@ -11,7 +11,7 @@ go-to: state_menu
 - @wip2: wwiipp
 
 @alsace
-view-if: alsace_ger = 1 or wip = 0
+view-if: alsace_ger = 1
 
 - @alsace_landtag: Deal with <span style="color: #EC1E2F;">Alsa</span><span style="color: #EFBF04;">cian</span> Landtag Affairs
 - @alsace_intergration: Deal with intergrating the <span style="color: #EC1E2F;">Alsace</span>-<span style="color: #EFBF04;">Loraine</span>
@@ -28,12 +28,12 @@ view-if: alsace_intergrated = 0
 - @staf_return
 
 @alsace_domestic
-view-if: spd_in_alsace_gov = 1 or wip = 0
+view-if: spd_in_alsace_gov = 1
 
 - @staf_return
 
 @alsace_police
-view-if: (spd_in_alsace_gov = 1 and spd_in_alsace_interior) or wip = 0
+view-if: (spd_in_alsace_gov = 1 and spd_in_alsace_interior)
 
 - @staf_return
 
