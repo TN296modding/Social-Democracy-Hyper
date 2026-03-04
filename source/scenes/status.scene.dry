@@ -433,9 +433,9 @@ on-arrival:
 
 <span style="color: #003DA5;">Netherlands</span>: [? if net_relation <= -3 : {!<span style="color: #FF0000;">!}[+ net_relation : foreign_relations +]{!</span>!} ?][? if net_relation >= -2 and net_relation <= 2 : {!<span style="color: #FFE000;">!}[+ net_relation : foreign_relations +]{!</span>!} ?][? if net_relation >= 3 : {!<span style="color: #00B300;">!}[+ net_relation : foreign_relations +]{!</span>!} ?] 
 
-<span style="color: #FFCD00;">Belgium</span>: [+ bel_relation : foreign_relations +] 
+<span style="color: #FFCD00;">Belgium</span>: [? if bel_relation <= -3 : {!<span style="color: #FF0000;">!}[+ bel_relation : foreign_relations +]{!</span>!} ?][? if bel_relation >= -2 and bel_relation <= 2 : {!<span style="color: #FFE000;">!}[+ bel_relation : foreign_relations +]{!</span>!} ?][? if bel_relation >= 3 : {!<span style="color: #00B300;">!}[+ bel_relation : foreign_relations +]{!</span>!} ?] 
 
-<span style="color: #51ADDA;">Luxembourg</span>: [+ lux_relation : foreign_relations +] 
+<span style="color: #51ADDA;">Luxembourg</span>:  [? if lux_relation <= -3 : {!<span style="color: #FF0000;">!}[+ lux_relation : foreign_relations +]{!</span>!} ?][? if lux_relation >= -2 and lux_relation <= 2 : {!<span style="color: #FFE000;">!}[+ lux_relation : foreign_relations +]{!</span>!} ?][? if lux_relation >= 3 : {!<span style="color: #00B300;">!}[+ lux_relation : foreign_relations +]{!</span>!} ?] 
 
 <span style="color: #046A38;">Portugal</span>: [+ por_relation : foreign_relations +]
 
