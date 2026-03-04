@@ -87,6 +87,33 @@ view-if: (spd_in_westaustria_gov = 1 and spd_in_westaustria_interior)
 
 - @staf_return
 
+@eastaus
+view-if: anschluss = 1 or wip = 0
+
+- @eastaus_landtag: Deal with the <span style="color: #EF3340;">East</span> <span style="color: #FFFFFF;">Aust</span><span style="color: #EF3340;">rian</span> Landtag Affairs
+- @eastaus_intergration: Deal with intergrating <span style="color: #EF3340;">East</span> <span style="color: #FFFFFF;">Aus</span><span style="color: #EF3340;">ria</span>
+- @eastaus_domestic: Deal with <span style="color: #EF3340;">East</span> <span style="color: #FFFFFF;">Aust</span><span style="color: #EF3340;">rian</span> civilian affairs
+- @eastaus_police: Deal with the <span style="color: #EF3340;">East</span> <span style="color: #FFFFFF;">Aust</span><span style="color: #EF3340;">rian</span> police force
+
+@eastaus_landtag
+
+- @staf_return
+
+@eastaus_intergration
+view-if: austria_intergrated = 0
+
+- @staf_return
+
+@eastaus_domestic
+view-if: spd_in_eastaustria_gov = 1
+
+- @staf_return
+
+@eastaus_police
+view-if: (spd_in_eastaustria_gov = 1 and spd_in_eastaustria_interior)
+
+- @staf_return
+
 @staf_return
 title: Return to the State Affairs menu
 go-to: state_menu
