@@ -2,6 +2,11 @@ title: state_affairs
 new-page: true
 is-special: true
 go-to: state_menu
+### Add emergency situations, like calling general strikes
+### Alsace Minstries: Government Ministries + Culture Ministry
+### Anhalt Ministries: Government Ministrues
+### Baden Ministries: State President, Interior Ministry, Culture and Teaching, Finance, Justice 
+### Bavaria Ministries: Prime Minister, (Bavarian) Foreign Ministry, Justice, Interior, Culture, Finance, Trade;Industry; and Commerce;, Social Minstry, Agriculture
 
 = State Affairs
 
@@ -12,6 +17,7 @@ go-to: state_menu
 - @westaus: Deal with <span style="color: #EF3340;">West</span> <span style="color: #FFFFFF;">Aus</span><span style="color: #EF3340;">tria</span>
 - @eastaus: Deal with <span style="color: #EF3340;">East</span> <span style="color: #FFFFFF;">Aus</span><span style="color: #EF3340;">tria</span>
 - @baden: Deal with  <span style="color: #FED700;">Ba</span><span style="color: #E81B23;">d</span><span style="color: #FED700;">en</span>
+- @bavaria: Deal with <span style="color: #0098D4;">Ba</span><span style="color: #FFFFFF;">va</span><span style="color: #0098D4;">ri</span><span style="color: #FFFFFF;">a</span>
 
 @alsace
 view-if: alsace_ger = 1 or wip = 0
