@@ -17,6 +17,9 @@ tags: govt_affairs, cabinet
 - @reparations: Negotiate our reparations
 - @finance: Negotiate the articles regarding finance
 - @other: Negotiate parts XIV (French Occupation), and parts XV (Miscellaneous)
+- @incrlev: Increase our diplomatic leverage
+- @root: Do not pursue negotiations
+- @easy_discard
 
 @military
 
