@@ -1,1 +1,11 @@
+title: Negotiating Versailles
+new-page: true
+is-card: true
+on-arrival: neg_versailles_timer += 6; month_actions += 1
+view-if: spd_in_government and (foreign_minister_party = "SPD") and agricultural_policy_timer == 0
+#card-image:
+tags: govt_affairs, cabinet
+
+= Negotiating Versailles
+
 wip
