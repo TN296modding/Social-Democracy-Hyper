@@ -17,7 +17,7 @@ tags: govt_affairs, cabinet
 - @reparations: Negotiate our reparations
 - @finance: Negotiate the articles regarding finance
 - @other: Negotiate parts XIV (French Occupation), and parts XV (Miscellaneous)
-- @incrlev: Increase our diplomatic leverage
+- @incrlev: Increase our <span style="color: #0F52BA;">Diplomatic</span> <span style="color: #38664C;">Leverage</span>
 - @root: Do not pursue negotiations
 - @easy_discard
 
@@ -56,3 +56,8 @@ wip
 @other
 
 wip
+
+@incrlev
+on-arrival: diplo_lev += 1
+
+We have increased our <span style="color: #0F52BA;">Diplomatic</span> <span style="color: #38664C;">Leverage</span>
