@@ -145,6 +145,11 @@ view-if: (spd_in_baden_gov = 1 and spd_in_baden_interior)
 
 - @staf_return
 
+@bavaria_intergration
+view-if: alsace_intergrated = 0
+
+- @staf_return
+
 @bavaria_domestic
 view-if: spd_in_bav_gov = 1
 
