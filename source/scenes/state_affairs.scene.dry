@@ -146,13 +146,14 @@ view-if: (spd_in_baden_gov = 1 and spd_in_baden_interior)
 - @bavaria_intergration: Deal with <span style="color: #0098D4;">Ba</span><span style="color: #FFFFFF;">va</span><span style="color: #0098D4;">ri</span><span style="color: #FFFFFF;">an</span> Seperatism
 - @bavaria_domestic: Deal with <span style="color: #0098D4;">Ba</span><span style="color: #FFFFFF;">va</span><span style="color: #0098D4;">ri</span><span style="color: #FFFFFF;">an</span> civilian affairs
 - @bavaria_police: Deal with the <span style="color: #0098D4;">Ba</span><span style="color: #FFFFFF;">va</span><span style="color: #0098D4;">ri</span><span style="color: #FFFFFF;">an</span> police force
+- @bavaria_extra_parl: Deal with extraparliamentry actions in <span style="color: #0098D4;">Ba</span><span style="color: #FFFFFF;">va</span><span style="color: #0098D4;">ri</span><span style="color: #FFFFFF;">a</span>
 
 @bavaria_landtag
 
 - @staf_return
 
 @bavaria_intergration
-view-if: alsace_intergrated = 0
+view-if: bav_intergrated = 0
 
 - @staf_return
 
@@ -165,6 +166,9 @@ view-if: spd_in_bav_gov = 1
 view-if: (spd_in_bav_gov = 1 and spd_in_bav_interior)
 
 - @staf_return
+
+@bavaria_extra_parl
+view-if: spd_in_bav_gov = 1
 
 @staf_return
 title: Return to the State Affairs menu
