@@ -41,7 +41,6 @@ Our members grumble at this, and some of the less committed members leave. But n
 [? if unemployed >= 15 : Because of the presently high unemployment, our members are feeling the extra burden hard. ?] The higher dues will make it more difficult for the <span style="color: #c00000;">**SPD**</span> to expand electorally.
 
 @emergency_fundraising
-view-if: wip = 1
-on-arrival: workers_spd -= 1; new_middle_spd -= 1; old_middle_spd -= 1; rural_spd -= 1; unemployed_spd -= 1; resources += (dues / 2)
+on-arrival: workers_spd -= 1; workers_spd -= 1 if unemployed >= 7; new_middle_spd -= 1; new_middle_spd -= 1 if unemployed >= 10; old_middle_spd -= 1; old_middle_spd -= 1 if unemploymed >= 12; rural_spd -= 1; rural_spd -= 1 if unemployed >= 7; unemployed_spd -= unemployed/3; resources += dues / 2; dues_disp2 = dues / 2; 
 
-wip
+We have attempted to raise some emergency funding, but some of our support drops, [? if unemployed >= 7 : especially because of the high employment, ?] but nevertheless, we have gained [+ dues_disp2 +] resources
