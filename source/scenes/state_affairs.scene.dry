@@ -197,3 +197,23 @@ view-if: spd_in_brem_gov = 1
 view-if: (spd_in_brem_gov = 1 and spd_in_brem_interior)
 
 - @staf_return
+
+@brunswick
+
+- @brunswick_landtag: Deal with the <span style="color: ##0047ab;">Bruns</span><span style="color: ##ffce08;">wick</span> Landtag 
+- @brunswick_domestic: Deal with <span style="color: ##0047ab;">Bruns</span><span style="color: ##ffce08;">wick</span> civilian affairs
+- @brunswick_police: Deal with the <span style="color: ##0047ab;">Bruns</span><span style="color: ##ffce08;">wick</span> police force
+
+@brunswick_landtag
+
+- @staf_return
+
+@brunswick_domestic
+view-if: spd_in_brunswick_gov = 1
+
+- @staf_return
+
+@brunswick_police
+view-if: (spd_in_brunswick_gov = 1 and spd_in_brunswick_interior)
+
+- @staf_return
