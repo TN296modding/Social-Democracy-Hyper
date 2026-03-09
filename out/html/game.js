@@ -233,7 +233,6 @@ window.disableGrayMode = function() {
       tabButton.className += ' active';
           window.statusTab = newTab;
           window.updateSidebar();
-    }
   };
 
   window.onDisplayContent = function() {
