@@ -97,7 +97,6 @@ const rightTools = document.querySelector('.tools.right');
 if (rightTools) {
     rightTools.style.display = 'block';
 }
-}
 
 Q.last_advisor_action = 0;
 Q.last_cabinet_action = 0;
