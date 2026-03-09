@@ -26,6 +26,8 @@ With control of the Labor Ministry, we can set national standards for labor. Our
 - @root: Do not enact any policies.
 - @easy_discard
 - @cancel_advisor_action
+# - @fifty_one_ratio: Institute policy that limits a business owner's income to no more than 50:1 that of their employees. Two options for this: significant increase in taxes if above limit, or a complete ban
+# - lower_fifty_one: Restrict the policy that to (40:1, 30:1, 20:1) that of employee. 
 
 @working_hours
 view-if: working_hours < 2
