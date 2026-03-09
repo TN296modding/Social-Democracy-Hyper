@@ -13,7 +13,7 @@ if (Q.shuffle_leadership_timer <= 0) {
 } else if (Q.shuffle_leadership_timer == 1) {
     Q.pinnedCardsDescription += '\n- next reshuffle in 1 week';
 } else {
-    Q.pinnedCardsDescription += '\n- next reshuffle in ' + Q.    shuffle_leadership_timer + ' weeks.';
+    Q.pinnedCardsDescription += '\n- next reshuffle in ' + Q.shuffle_leadership_timer + ' weeks.';
 }
 
 
