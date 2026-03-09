@@ -272,6 +272,7 @@ Finally, we can prioritise certain important topics in the curriculum
 - @food_safety
 
 @food_safety
+title: Provide funding for education on food safety
 subtitle: - 0.5 budget
 unavailable-subtitle: Not enoughbudget
 view-if: education_science >= 0.1 and food_safety >= 1 and food_safety_cur = 0
