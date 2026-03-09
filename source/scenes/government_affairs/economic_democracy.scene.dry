@@ -80,7 +80,7 @@ We have enacted legislation that makes it easier to create cooperative enterpris
 
 @credit_union_grants
 subtitle: -1 budget
-unavailable-sbutitle: Not enough budget
+unavailable-subtitle: Not enough budget
 choose-if: budget >= 1
 on-arrival: budget -= 1; economic_democracy += 1; cooperatives += 0.5; workers_spd += 2; new_middle_spd += 4; old_middle_spd += 3; economic_growth += 2; big_bank_control -= 1
 
