@@ -1,4 +1,10 @@
 (function() {
+  window.onerror = function(msg, src, line, col, err) {
+    document.getElementById('content').innerHTML = 
+        '<p style="color:red">ERROR: ' + msg + 
+        ' (line ' + line + ')</p>';
+    return false;
+};
   var game;
   var ui;
 
