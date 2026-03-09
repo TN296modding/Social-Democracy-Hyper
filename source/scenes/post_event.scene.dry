@@ -58,12 +58,12 @@ headerLinks.forEach(link => {
 
 const tabContainer = document.querySelector('.tab_container');
 if (tabContainer) {
-    tabContainer.style.backgroundColor = '#c3b8a0';
+    tabContainer.style.backgroundColor = '#999999';
 }
 
 const tabButtons = document.querySelectorAll('.tab_button');
 tabButtons.forEach((button) => {
-    button.style.backgroundColor = '#c3b8a0';
+    button.style.backgroundColor = '#999999';
     if (button.id !== 'emergency_tab') {
         button.style.paddingRight = '59px';
     }
@@ -77,14 +77,14 @@ tabButtons.forEach((button) => {
 
 const activeTabButton = document.querySelector('.tab_button.active');
 if (activeTabButton) {
-    activeTabButton.style.backgroundColor = '#f3f3f3';
+    activeTabButton.style.backgroundColor = '#676767';
 }
 
 tabButtons.forEach(button => {
     const computedStyle = window.getComputedStyle(button);
     const originalBackground = computedStyle.backgroundColor;
     button.addEventListener('mouseenter', () => {
-        button.style.backgroundColor = '#a89f8b';
+        button.style.backgroundColor = '#676767';
     });
     button.addEventListener('mouseleave', () => {
         if (!button.classList.contains('active')) {
@@ -92,11 +92,6 @@ tabButtons.forEach(button => {
         }
     });
 });
-
-const rightTools = document.querySelector('.tools.right');
-if (rightTools) {
-    rightTools.style.display = 'block';
-}
 
 Q.last_advisor_action = 0;
 Q.last_cabinet_action = 0;
@@ -324,6 +319,9 @@ if (Q.week >= 5) {
 }
 
 Q.month_actions_checked = Q.month_actions;
+if (Q.week <= 4) {
+    Q.week = (Q.month_actions + 1)
+}
 
 if (Q.ddp_in_popular_front && !Q.in_popular_front) Q.ddp_in_popular_front = 0;
 
@@ -331,6 +329,7 @@ if (Q.ddp_in_popular_front && !Q.in_popular_front) Q.ddp_in_popular_front = 0;
 if (Q.month_actions >= 4) {
     Q.time += 1;
     Q.month_actions = 0;
+    Q.week = (Q.month_actions + 1)
     Q.month += 1;
     if (Q.month >= 13) {
         Q.month = 1;
