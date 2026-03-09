@@ -1,10 +1,4 @@
 (function() {
-  window.onerror = function(msg, src, line, col, err) {
-    document.getElementById('content').innerHTML = 
-        '<p style="color:red">ERROR: ' + msg + 
-        ' (line ' + line + ')</p>';
-    return false;
-};
   var game;
   var ui;
 
@@ -220,23 +214,15 @@ window.disableGrayMode = function() {
   window.updateSidebar = function() {
       $('#qualities').empty();
       var scene = dendryUI.game.scenes[window.statusTab];
+      if (!scene) return;
       dendryUI.dendryEngine._runActions(scene.onArrival);
       var displayContent = dendryUI.dendryEngine._makeDisplayContent(scene.content, true);
       $('#qualities').append(dendryUI.contentToHTML.convert(displayContent));
   };
 
-  window.updateSidebarRight = function() {
-    $('#qualities_right').empty();
-    var scene = dendryUI.game.scenes[window.statusTabRight];
-    dendryUI.dendryEngine._runActions(scene.onArrival);
-    var displayContent = dendryUI.dendryEngine._makeDisplayContent(scene.content, true);
-    $('#qualities_right').append(dendryUI.contentToHTML.convert(displayContent));
-};
-
   window.changeTab = function(newTab, tabId, isRight) {
-      if (tabId == 'poll_tab' && (dendryUI.dendryEngine.state.qualities.historical_mode || dendryUI.dendryEngine.state.qualities.rubicon)) {
-          if (dendryUI.dendryEngine.state.qualities.historical_mode && !dendryUI.dendryEngine.state.qualities.rubicon) window.alert('Polls are not available in historical mode.');
-          if (dendryUI.dendryEngine.state.qualities.rubicon) window.alert('Polls are not available after crossing the rubicon.');
+      if (tabId == 'poll_tab' && (dendryUI.dendryEngine.state.qualities.historical_mode)) {
+          if (dendryUI.dendryEngine.state.qualities.historical_mode) window.alert('Polls are not available in historical mode.');
           return;
       }
       var tabButton = document.getElementById(tabId);
@@ -245,10 +231,6 @@ window.disableGrayMode = function() {
         tabButtons[i].className = tabButtons[i].className.replace(' active', '');
       }
       tabButton.className += ' active';
-      if (isRight) {
-        window.statusTabRight = newTab;
-        window.updateSidebarRight();
-        } else {
           window.statusTab = newTab;
           window.updateSidebar();
     }
@@ -256,7 +238,6 @@ window.disableGrayMode = function() {
 
   window.onDisplayContent = function() {
       window.updateSidebar();
-      window.updateSidebarRight();
   };
 
   window.toggleDem = function toggleDemographicTable() {
@@ -349,7 +330,6 @@ window.disableGrayMode = function() {
 
   window.justLoaded = true;
   window.statusTab = "status";
-  window.statusTabRight = "status_right";
   window.dendryModifyUI = main;
   console.log("Modifying stats: see dendryUI.dendryEngine.state.qualities");
 
