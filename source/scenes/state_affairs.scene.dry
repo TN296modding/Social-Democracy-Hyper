@@ -22,6 +22,7 @@ go-to: state_menu
 - @bavaria: Deal with <span style="color: #0098D4;">Ba</span><span style="color: #FFFFFF;">va</span><span style="color: #0098D4;">ri</span><span style="color: #FFFFFF;">a</span>
 - @bremen: Deal with <span style="color: #DD0000;">T</span><span style="color: #FFFFFF;">h</span><span style="color: #DD0000;">e</span> <span style="color: #FFFFFF;">c</span><span style="color: #DD0000;">i</span><span style="color: #FFFFFF;">ty of</span> <span style="color: #DD0000;">Bre</span><span style="color: #FFFFFF;">men</span>
 - @brunswick: Deal with <span style="color: #0047ab;">Bruns</span><span style="color: #ffce08;">wick</span>
+- @coburg: Deal with Coburg
 
 @alsace
 view-if: alsace_ger = 1 or wip = 0
@@ -215,5 +216,25 @@ view-if: spd_in_brunswick_gov = 1
 
 @brunswick_police
 view-if: (spd_in_brunswick_gov = 1 and spd_in_brunswick_interior)
+
+- @staf_return
+
+@coburg
+
+- @coburg_landtag: Deal with the Coburg Landtag 
+- @coburg_domestic: Deal with Coburg civilian affairs
+- @coburg_police: Deal with the Coburg police force
+
+@coburg_landtag
+
+- @staf_return
+
+@coburg_domestic
+view-if: spd_in_coburg_gov = 1
+
+- @staf_return
+
+@coburg_police
+view-if: (spd_in_coburg_gov = 1 and spd_in_coburg_interior)
 
 - @staf_return
