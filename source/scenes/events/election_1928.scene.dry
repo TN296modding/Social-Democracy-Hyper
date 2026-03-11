@@ -721,7 +721,7 @@ if (Q.kpd_relation >= 30 && Q.sapd_formed == 1) {
 
 Q.leverage = Q.spd_r;
 if (Q.right_coalition >= 50 && (Q.dnvp_ideology == "Moderate" || Q.dnvp_westarp) || Q.center_right_coalition >= 50 && Q.dnvp_ideology == "Moderate") { Q.leverage -= 5; }
-if (Q.left_front >= 50 && kpd_relation >= 65) || (Q.kpd_leader == "Conciliators") { Q.leverage += 5 }
+if ((Q.left_front >= 50 && Q.kpd_relation >= 65) || (Q.kpd_leader == "Conciliators")) { Q.leverage += 5 }
 Q.support_kpd_grand = 0;
 Q.support_kpd_weimar = 0;
 
