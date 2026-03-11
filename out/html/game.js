@@ -212,13 +212,16 @@ window.disableGrayMode = function() {
   };
 
   window.updateSidebar = function() {
-      $('#qualities').empty();
-      var scene = dendryUI.game.scenes[window.statusTab];
-      if (!scene) return;
-      dendryUI.dendryEngine._runActions(scene.onArrival);
-      var displayContent = dendryUI.dendryEngine._makeDisplayContent(scene.content, true);
-      $('#qualities').append(dendryUI.contentToHTML.convert(displayContent));
-  };
+    $('#qualities').empty();
+    var scene = dendryUI.game.scenes[window.statusTab];
+    if (!scene) {
+        document.getElementById('qualities').innerHTML = 'scene not found: ' + window.statusTab;
+        return;
+    }
+    dendryUI.dendryEngine._runActions(scene.onArrival);
+    var displayContent = dendryUI.dendryEngine._makeDisplayContent(scene.content, true);
+    $('#qualities').append(dendryUI.contentToHTML.convert(displayContent));
+};
 
   window.changeTab = function(newTab, tabId, isRight) {
       if (tabId == 'poll_tab' && (dendryUI.dendryEngine.state.qualities.historical_mode)) {
