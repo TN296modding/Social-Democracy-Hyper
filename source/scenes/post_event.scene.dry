@@ -337,13 +337,13 @@ if (Q.month_actions >= 4) {
         Q.month = 1;
         Q.year += 1;
         Q.resources += Q.dues;
-        if (Q.cooperatives_credit_check = 1) {
+        if (Q.cooperatives_credit_check == 1) {
             Q.cooperatives_credit += (Q.cooperatives/unemployed)
         Q.cooperatives_tax += ((Q.cooperatives/10) - (Q.cooperatives_credit))
         Q.budget += Q.budgetgrowth;
         Q.budget += (Q.economic_growth/10)
         Q.budget += Q.cooperatives_tax
-        Q.budget += ((upper_tax_rates/20)+(middle_tax_rates/20)+(big_bus_tax_rates/20)+(small_bus_tax_rates/20))
+        Q.budget += ((Q.upper_tax_rates/20)+(Q.middle_tax_rates/20)+(Q.big_bus_tax_rates/20)+(Q.small_bus_tax_rates/20))
         if (Q.dissent_percent < 5) {
             Q.resources += 1;
         } else if (Q.dissent_percent > 30) {
