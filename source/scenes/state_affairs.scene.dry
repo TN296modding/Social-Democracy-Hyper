@@ -4,15 +4,16 @@ is-special: true
 go-to: state_menu
 ### Add emergency situations, like calling general strikes
 ### Alsace Minstries: Government Ministries + Culture Ministry
-### Anhalt Ministries: Government Ministrues
+### Anhalt Ministries: Government Ministries
+## Anhalt Elections (Hist): 6 Jun 1920; 22 Jun 1924; 9 Nov 1924; 20 May 1928; 24 Apr 1932; 5 Mar 1933;
 ### Baden Ministries: State President, Interior Ministry, Culture and Teaching, Finance, Justice 
-### Baden Ministries: 30 Oct 1921; 25 Oct 1925; 27 Oct 1929; 5 mar 1933;
+### All Baden Elections (Hist.): 30 Oct 1921; 25 Oct 1925; 27 Oct 1929; 5 mar 1933;
 ### Bavaria Ministries: Prime Minister, (Bavarian) Foreign Ministry, Justice, Interior, Culture, Finance, Trade;Industry; and Commerce;, Social Minstry, Agriculture
-### All Bavaria Elections (hist.): 6 Jun 1920; 4 May 1924; 20 May 1928; 24 Apr 1932; 5 Mar 1933;
+### All Bavaria Elections (Hist.): 6 Jun 1920; 4 May 1924; 20 May 1928; 24 Apr 1932; 5 Mar 1933;
 ### Bremen Ministries: Internal Affairs, Justice, Police, Food and Agriculture, Economy and Transport, Education, Work and Social Work, Finances
 ### All Bremen Elections (Hist.): 6 Jun 1920; 20 Feb 1921; 18 Nov 1923; 7 Dec 1924; 13 Nov 1927; 30 Nov 1930; 5 March 1933;
 ### Brunswick Ministries: Work, Interior, Trade, Transport, Finance, Justice, Education
-### All Brunswick Elections (Hist.): 16 May 1920; 22 Jan 1922; 7 Dec 1924; 27 Nov 1927; 14 Sep 1930; 
+### All Brunswick Elections (Hist.): 16 May 1920; 22 Jan 1922; 7 Dec 1924; 27 Nov 1927; 14 Sep 1930; 5 Mar 1933;
 
 = State Affairs
 
