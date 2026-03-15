@@ -16,6 +16,8 @@ if (Q.economic_growth) {
 
 = Status
 
+MOD RELOADED
+
 [+ month : month +] [+ year +] Week [+ week +]
 
 Resources available: [+ resources +]
