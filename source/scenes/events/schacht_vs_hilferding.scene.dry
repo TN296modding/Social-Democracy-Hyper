@@ -4,6 +4,7 @@ view-if: year = 1929 and month >= 11 and spd_in_government = 1 and finance_minis
 tags: event
 max-visits: 1
 face-image: img/portraits/SchachtHjalmar.jpg
+### Add options to refuse the resignation without exposing him
 
 = Schacht against Hilferding
 
