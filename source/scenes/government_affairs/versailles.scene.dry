@@ -2,7 +2,7 @@ title: Negotiating Versailles
 new-page: true
 is-card: true
 on-arrival: neg_versailles_timer += 6; month_actions += 1
-view-if: spd_in_government and (foreign_minister_party = "SPD") and agricultural_policy_timer == 0
+view-if: spd_in_government and (foreign_minister_party = "SPD") and neg_versailles_timer == 0
 #card-image:
 tags: govt_affairs, cabinet
 
@@ -27,11 +27,18 @@ wip
 
 @borders
 
-wip
+- @alsace_negotiating: Attempt to gain leverage in negotiating back the Alsace-Lorraine
+- @alsace_1: WIP: Fail to negotiate back the Alsace-Lorraine, and our relations seriously damaged, thankfully no further action has been taking
+- @alsace_2: WIP: Fail to negotiate for the A-L, but nothing bad has come of it.
+- @alsace_3: WIP: Fail to negotiate for the A-L, but we have progressed in reducing reparations, and gained diplomatic leverage
+- @alsace_4: WIP: Sucessfully negotiate small parts of A-L, and Straßburg becomes a free city. 
+- @alsace_5: WIP: Sucessfully negotiate Alsace, but Lorraine remains French (Appears with alsace_6, but mutually exclusive)
+- @alsace_6: WIP: Sucessfully negotiate Lorraine, but Alsace etc
+- @alsace_7: WIP: Sucessfully negotiate the A-L, but FRA relations drastically reduced and French snap elec
 
 @saar
 
-wip
+wip negotiate a earlier referendum
 
 @colonies
 
@@ -39,7 +46,7 @@ wip
 
 @austrohungary
 
-wip
+wip help Austria and Hungary with Trianon and En-Laye
 
 @danzig
 
