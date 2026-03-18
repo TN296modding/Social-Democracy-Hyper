@@ -37,6 +37,6 @@ title: Rural Relations
 subtitle: Leon Kopp can use his connections to move the rural parties closer to the left -- or at least, the <span style=" color: #c90000";>SPD</span>
 choose-if: advisor_action_timer == 0
 unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
-on-arrival: advisor_action_timer = 6; others_relation += 10; cnblp_relation += 10; wip_relations += 0; rural_relations_unlocked = 1;
+on-arrival: advisor_action_timer = 6; others_relation += 10; cnblp_relation += 10; wip_relations += 0; rural_relations_unlocked = 1; cnblp_left += 1 if cnblp_relation >= 40; cnblp_left += ((cnblp_relation/10)-3);
 
 We have improved relations with the rural parties, such as the CNBLP
