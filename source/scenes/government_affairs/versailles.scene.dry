@@ -62,7 +62,60 @@ if (roll < 0.90) {
 [? if border_trigger_1 = 0 : We have failed to gain more leverage ?][? if border_trigger_1 = 1 : We have succeeded in gaining more leverage ?]
 
 @alsace_1
-title: Attempt to negotiate the clauses regarding the Alsace-Lorraine
+title: Attempt the final negotiations of the clauses regarding the Alsace-Lorraine
+subtitle: [? if tips = 1 : You may wish to increase your <span style="color: #0F52BA;">Diplomatic</span> <span style="color: #38664C;">Leverage</span> or your Border Negotiating ?]
+view-if: (border_lev + diplo_lev) <= 1 and alsace_resolved = 0
+on-arrival: fra_relation -= 3; border_lev -= 2; alsace_resolved = 1;
+
+We have utterly failed to improve upon the clauses regarding the Treaty of Versailles, and have even sown distrust among our Socialist-French allies
+
+@alsace_2
+title: Attempt the final negotiations of the clauses regarding the Alsace-Lorraine
+subtitle: [? if tips = 1 : You may wish to increase your <span style="color: #0F52BA;">Diplomatic</span> <span style="color: #38664C;">Leverage</span> or your Border Negotiating ?]
+view-if: (border_lev + diplo_lev) <= 4 and (border_lev + diplo_lev) >= 2 and alsace_resolved = 0
+on-arrival: border_lev -= 4; alsace_resolved = 1;
+
+We have failed to improve upon the clauses regarding the Treaty of Versailles, but nothing bad has come of it.
+
+@alsace_3
+title: Attempt the final negotiations of the clauses regarding the Alsace-Lorraine
+subtitle: [? if tips = 1 : You may wish to increase your <span style="color: #0F52BA;">Diplomatic</span> <span style="color: #38664C;">Leverage</span> or your Border Negotiating ?]
+view-if: (border_lev + diplo_lev) <= 6 and (border_lev + diplo_lev) >= 5 and alsace_resolved = 0
+on-arrival: border_lev -= 6; alsace_resolved = 1; reparations_negotiation += 1;
+
+We have failed to improve upon the clauses regarding the Treaty of Versailles, but we have secured some progress in reparations negotiations
+
+@alsace_4
+title: Attempt the final negotiations of the clauses regarding the Alsace-Lorraine
+subtitle: [? if tips = 1 : You may wish to increase your <span style="color: #0F52BA;">Diplomatic</span> <span style="color: #38664C;">Leverage</span> or your Border Negotiating ?]
+view-if: (border_lev + diplo_lev) < 1 and alsace_resolved = 0
+on-arrival: fra_relation -= 3; border_lev -= 2; alsace_resolved = 1;
+
+We have utterly failed to improve upon the clauses regarding the Treaty of Versailles, and have even sown distrust among our Socialist-French allies wip
+
+@alsace_5
+title: Attempt the final negotiations of the clauses regarding the Alsace-Lorraine
+subtitle: [? if tips = 1 : You may wish to increase your <span style="color: #0F52BA;">Diplomatic</span> <span style="color: #38664C;">Leverage</span> or your Border Negotiating ?]
+view-if: (border_lev + diplo_lev) < 1 and alsace_resolved = 0
+on-arrival: fra_relation -= 3; border_lev -= 2; alsace_resolved = 1;
+
+We have utterly failed to improve upon the clauses regarding the Treaty of Versailles, and have even sown distrust among our Socialist-French allies
+
+@alsace_6
+title: Attempt the final negotiations of the clauses regarding the Alsace-Lorraine
+subtitle: [? if tips = 1 : You may wish to increase your <span style="color: #0F52BA;">Diplomatic</span> <span style="color: #38664C;">Leverage</span> or your Border Negotiating ?]
+view-if: (border_lev + diplo_lev) < 1 and alsace_resolved = 0
+on-arrival: fra_relation -= 3; border_lev -= 2; alsace_resolved = 1;
+
+We have utterly failed to improve upon the clauses regarding the Treaty of Versailles, and have even sown distrust among our Socialist-French allies
+
+@alsace_7
+title: Attempt the final negotiations of the clauses regarding the Alsace-Lorraine
+subtitle: [? if tips = 1 : You may wish to increase your <span style="color: #0F52BA;">Diplomatic</span> <span style="color: #38664C;">Leverage</span> or your Border Negotiating ?]
+view-if: (border_lev + diplo_lev) < 1 and alsace_resolved = 0
+on-arrival: fra_relation -= 3; border_lev -= 2; alsace_resolved = 1;
+
+We have utterly failed to improve upon the clauses regarding the Treaty of Versailles, and have even sown distrust among our Socialist-French allies
 
 @saar
 
