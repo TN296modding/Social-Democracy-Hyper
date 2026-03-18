@@ -704,7 +704,7 @@ Joseph Wirth is now an advisor.
 
 # Nonfactional advisors
 
-@add_baade
+@add_baade1
 title: Fritz Baade
 subtitle: Fritz Baade is one of the few agricultural policy experts in the <span style="color: #c00000;">**SPD**</span>. {!<br><br>!}[? if difficulty < 0 : Actions - Agricultural Policy, Rural Campaigning, Addressing the Economic Crisis ?]
 is-card: true
@@ -757,7 +757,7 @@ Friedrich Stampfer is now an advisor.
 
 # Rural advisors
 
-@add_baade
+@add_baade2
 title: Fritz Baade
 subtitle: Fritz Baade is one of the few agricultural policy experts in the <span style="color: #c00000;">**SPD**</span>. {!<br><br>!}[? if difficulty < 0 : Actions - Agricultural Policy, Rural Campaigning, Addressing the Economic Crisis ?]
 is-card: true
