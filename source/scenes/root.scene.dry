@@ -127,6 +127,10 @@ Q.dvp_relation = 35;
 Q.dnvp_relation = 5;
 Q.nsdap_relation = 0;
 Q.lvp_relation = 0;
+// Other parties
+Q.cnblp_relation = 20;
+Q.wp_relation = 10;
+Q.rural_others = 25;
 
 Q.kpd_leader = "Thälmann";
 Q.z_leader = "Marx";
@@ -445,6 +449,13 @@ Q.lvp_votes = 0;
 
 Q.cvp_right = 0;
 Q.cvp_left = 0;
+
+Q.cnblp_left = 0;
+Q.cnblp_right = 7;
+Q.wp_left = 0;
+Q.wp_right = 8;
+Q.rural_others_left = 0;
+Q.rural_others_right = 6;
 
 Q.adjustmentFactors_spd = 1.0;
 Q.adjustmentFactors_sapd = 1.0;
