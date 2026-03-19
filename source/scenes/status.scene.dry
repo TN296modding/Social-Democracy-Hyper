@@ -316,10 +316,36 @@ Prussian police loyalty: [+ prussian_police_loyalty : loyalty +]
 [? if spd_in_government : Interior police loyalty: [+ interior_police_loyalty : loyalty +] ?]
 
 @polls
+@polls
 on-arrival: {!
 Q.pro_republic_disp = Math.floor(Q.pro_republic);
 Q.nationalism_disp = Math.floor(Q.nationalism);
 Q.socialism_disp = Math.floor(Q.socialism);
+
+var parties = ['spd', 'kpd', 'z', 'ddp', 'dvp', 'dnvp', 'nsdap', 'other'];
+var classes = ['workers', 'new_middle', 'old_middle', 'rural', 'unemployed', 'catholics'];
+var classSizes = {
+    workers: Q.workers,
+    new_middle: Q.new_middle,
+    old_middle: Q.old_middle,
+    rural: Q.rural,
+    unemployed: Q.unemployed,
+    catholics: Q.catholics
+};
+var total = 0;
+
+for (var party of parties) {
+    var raw = 0;
+    for (var c of classes) {
+        raw += classSizes[c] * Q[c + '_' + party];
+    }
+    Q[party + '_votes_raw'] = raw;
+    total += raw;
+}
+
+for (var party of parties) {
+    Q[party + '_votes'] = Math.round((Q[party + '_votes_raw'] / total) * 100 * 10) / 10;
+}
 !}
 
 = Projected election results
