@@ -7,7 +7,7 @@ new-page: true
 
 = Conrad Kraus
 
-Conrad Kraus is an influential member of the [? if syndcalism = 0 : ADGB-Associated ?][? if syndicalism = 1 : IWW-Associated ?] Agricultural Unions
+Conrad Kraus is an influential member of the [? if syndcalism = 0 : ADGB-Associated ?][? if syndicalism = 1 : IWW-Associated ?] Agricultural Unions, and an influential <span style=" color: #228B22;">Agrarian</span> <span style=" color: #c90000;">Socialist</span> within our party.
 
 - @agriculture_union
 - @iww_influence
