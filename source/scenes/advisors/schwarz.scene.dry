@@ -10,46 +10,38 @@ new-page: true
 ### Action: Agriculture Govenrment Card
 ### Action: Strengthen the Rural faction and reduce its dissent
 
-= Siegfried Aufhäuser
+= Adler Schwarz
 
-Aufhäuser is a leader of the AfA-Bund, the federation of <span style="color: #c00000;">socialist</span> white-collar trade unions.
+Adler Schwarz is the leading Agrarian Socialist theorist within the <span style=" color:#c90000;">SPD</span>
 
-- @white_collar
-- @union_unity
-- @crisis
-- @moderate_economic_plan
+- @agr_cc
+- @agriculture
+- @rural_faction
 - @root: Return to main
 
-@white_collar
-title: Organizing white-collar workers
-subtitle: Improve our standing among the new middle class.
+@agr_cc
+title: Awaken Class-Consciousness within the Peasant class
+subtitle: This will make them more receptive to Socialist ideals, and push the Agrarian-Conservative parties further left
 choose-if: advisor_action_timer <= 0
-unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?] 
-on-arrival: advisor_action_timer = 6; new_middle_spd += 6*(1-dissent);
+view-if: agr_cc >= 7
+unavailable-subtitle: [+ advisor_action_timer +] months before next advisor action
+on-arrival: advisor_action_timer = 6; rural_spd += 8; catholics_spd += 2; cnblp_left += 5; dhp_left += 3; dbp_left += 3; others_left += 3; cnblp_relation += 5; dbp_relation += 10; others_relation += 12; dhp_relation += 15; pro_republic += 6; nationalism -= 5;
 
-We have increased our organizing among white-collar workers.
+We have sucessfully fostered Class consciousness in the New Middle Class, and pushed the Economic-Liberal left.
 
-@union_unity
-title: Union-party coordination
-subtitle: Reduce dissent among the unions.
+@agriculture
+title: Agricultural Policy
+subtitle: Schwarz can influence Baade.
+choose-if: advisor_action_timer <= 0 and spd_in_government and agriculture_minister_party == "SPD"
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?][? if not spd_in_government : The <span style="color: #c00000;">SPD</span> is not in government. ?][? if agriculture_minister_party != "SPD": The <span style="color: #c00000;">SPD</span> does not have the Agriculture Ministry. ?]
+on-arrival: advisor_action_timer = 6; agricultural_policy_timer -= 6; last_advisor_action = 1
+go-to: agricultural_policy
+
+@rural_faction
+title: Strength the Agrarian Socialists
+subtitle: Schwarz holds a lot of influence among the Agrarian Socialists. Strengthening the Agrarian Socialists will make the Agrarian-Conservative parties more receptive to us.
 choose-if: advisor_action_timer <= 0
-unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
-on-arrival: advisor_action_timer = 6; labor_dissent -= 10;
+unavailable-subtitle: [+ advisor_action_timer +] months before next advisor action
+on-arrival: advisor_action_timer = 6; rural_strength += 10; rural_dissent -= 10; rural_nsdap -= 1; rural_others += 1; cnblp_left += 1; dhp_left += 1; dbp_left += 1; others_left += 1; dhp_Relation += 3; dbp_relation += 3; cnblp_rleation += 3; others_relation += 2
 
-We have reduced tensions with the Labor faction.
-
-@crisis
-title: Addressing the economic crisis
-subtitle: Aufhäuser can help support a left-wing economic program.
-choose-if: advisor_action_timer <= 0 and nationalization_adopted == 0 and black_thursday_seen == 1 and nationalization_support <= 5
-unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?][? if black_thursday_seen == 0 : We are not currently in an economic crisis. ?][? if nationalization_adopted > 0 : We have already adopted the Left plan. ?]
-on-arrival: advisor_action_timer = 6; 
-go-to: crisis_program.support_left 
-
-@moderate_economic_plan
-title: Support the reformist economic plan
-subtitle: Aufhäuser can also support a moderate economic plan.
-choose-if: advisor_action_timer = 0 and moderate_plan_adopted = 0 and black_thursday_seen = 1
-unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?] [? if moderate_economic_plan = 0 : We have already adopted the reformist economic plan. ?] [? if black_thursday_seen == 0 : We are not currently in an economic crisis. ?]
-on-arrival: advisor_action_timer = 6
-go-to: crisis_program.support_moderate
+We have strengthened the Agrarian Socialists
