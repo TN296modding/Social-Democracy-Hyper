@@ -24,6 +24,12 @@ Meanwhile, moderates and reformists draw up proposals for a limited plan of job 
 - @support_labor_pre: Support the Labor view.
 - @support_left: Support the Left view.
 - @support_moderate: Support the Reformist view.
+- @support_leftnat: Support the Left-Nationalist view.
+- @support_rural: Support the Agrarian-Socialist view.
+- @support_syndicalist: Support the Syndicalist view.
+- @support_leftchris: Support the Left-Christian view.
+- @support_business: Support the Seeheimer Kreis' view.
+- @support_liberal: Support the Social-Liberal view.
 - @defer: Defer making a decision until we have more information.
 
 @support_centrist
@@ -87,6 +93,42 @@ We have not yet adopted the plan. More work needs to be done.
 on-arrival: reformist_strength += 10; reformist_dissent -= 10; left_dissent += 8; labor_dissent += 6; moderate_plan_adopted = 1; economic_plan = 2; coalition_dissent -= 1 if unemployed > 15; z_relation += 5;
 
 With our hard work, we have convinced the majority of the party to adopt the moderate job creation plan! [? if spd_in_government == 1 : We can begin implementing the plan as soon as possible, as long as we have the Economic or Finance ministries. ?]
+
+@support_leftnat: Support the Left-Nationalist view.
+choose-if: wip = 12561914119
+unavailable-subtitle: Coming Soon
+
+e
+
+@support_rural: Support the Agrarian-Socialist view.
+choose-if: wip = 12561914119
+unavailable-subtitle: Coming Soon
+
+e
+
+@support_syndicalist: Support the Syndicalist view.
+choose-if: wip = 12561914119
+unavailable-subtitle: Coming Soon
+
+e
+
+@support_leftchris: Support the Left-Christian view.
+choose-if: wip = 12561914119
+unavailable-subtitle: Coming Soon
+
+e
+
+@support_business: Support the Seeheimer Kreis' view.
+choose-if: wip = 12561914119
+unavailable-subtitle: Coming Soon
+
+e
+
+@support_liberal: Support the Social-Liberal view.
+choose-if: wip = 12561914119
+unavailable-subtitle: Coming Soon
+
+e
 
 @defer
 
