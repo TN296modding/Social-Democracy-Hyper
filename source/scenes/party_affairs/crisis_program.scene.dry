@@ -94,37 +94,37 @@ on-arrival: reformist_strength += 10; reformist_dissent -= 10; left_dissent += 8
 
 With our hard work, we have convinced the majority of the party to adopt the moderate job creation plan! [? if spd_in_government == 1 : We can begin implementing the plan as soon as possible, as long as we have the Economic or Finance ministries. ?]
 
-@support_leftnat: Support the Left-Nationalist view.
+@support_leftnat
 choose-if: wip = 12561914119
 unavailable-subtitle: Coming Soon
 
 e
 
-@support_rural: Support the Agrarian-Socialist view.
+@support_rural
 choose-if: wip = 12561914119
 unavailable-subtitle: Coming Soon
 
 e
 
-@support_syndicalist: Support the Syndicalist view.
+@support_syndicalist
 choose-if: wip = 12561914119
 unavailable-subtitle: Coming Soon
 
 e
 
-@support_leftchris: Support the Left-Christian view.
+@support_leftchris
 choose-if: wip = 12561914119
 unavailable-subtitle: Coming Soon
 
 e
 
-@support_business: Support the Seeheimer Kreis' view.
+@support_business
 choose-if: wip = 12561914119
 unavailable-subtitle: Coming Soon
 
 e
 
-@support_liberal: Support the Social-Liberal view.
+@support_liberal
 choose-if: wip = 12561914119
 unavailable-subtitle: Coming Soon
 
