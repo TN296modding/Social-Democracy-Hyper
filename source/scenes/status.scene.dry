@@ -354,8 +354,6 @@ for (var party of parties) {
     Q[party + '_votes'] = Math.round((Q[party + '_votes_raw'] / total) * 100 * 10) / 10;
 }
 
-### add splinter parties to the Prog coal
-
 Q.prog_list_disp = Q.kpd_votes + Q.spd_votes + Q.ddp_votes;
 
 if (Q.lvp_formed) {
@@ -375,12 +373,12 @@ if (Q.dnvp_ideology == "Radical") {
 Q.bou_list_disp = Q.z_votes + Q.ddp_votes + Q.lvp_votes + Q.dvp_votes + Q.kvp_votes;
 
 if (Q.dnvp_ideology == "Moderate") {
-    Q.bou_list_disp += Q.dnvp_votes:
+    Q.bou_list_disp += Q.dnvp_votes;
 }
 
-Q.agr_list_disp = Q.dnvp_votes + Q.others_votes:
+Q.agr_list_disp = Q.dnvp_votes + Q.others_votes;
 
-Q.agr_soc_list_disp = 0:
+Q.agr_soc_list_disp = 0;
 
 if (not lvp_formed) {
     Q.wei_list_disp = (Q.z_votes -= 3) + Q.ddp_votes + Q.spd_votes;
