@@ -390,7 +390,7 @@ if (lvp_formed) {
     Q.wei_list_disp = (Q.z_votes -= 3) + Q.lvp_votes + Q.spd_votes;
 }
 
-Q.lnd_list_disp = Q.lvp_votes + Q.z_votes + Q.dvp_votes + Q.kvp_votes + Q.other_votes
+Q.lnd_list_disp = Q.lvp_votes + Q.z_votes + Q.dvp_votes + Q.kvp_votes + Q.other_votes;
 
 !}
 
