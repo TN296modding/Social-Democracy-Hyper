@@ -360,7 +360,7 @@ if (Q.lvp_formed) {
     Q.lib_list_disp = Q.lvp_votes + (Q.other_votes/2);
 }
 
-if (Q.lvp_formed == 0) {
+if (!Q.lvp_formed) {
     Q.lib_list_disp = Q.ddp_votes + Q.dvp_votes + (Q.other_votes/2);
 }
 
@@ -380,11 +380,11 @@ Q.agr_list_disp = Q.dnvp_votes + Q.others_votes;
 
 Q.agr_soc_list_disp = 0;
 
-if (not lvp_formed) {
+if (!Q.lvp_formed) {
     Q.wei_list_disp = (Q.z_votes -= 3) + Q.ddp_votes + Q.spd_votes;
 }
 
-if (lvp_formed) {
+if (Q.lvp_formed) {
     Q.wei_list_disp = (Q.z_votes -= 3) + Q.lvp_votes + Q.spd_votes;
 }
 
