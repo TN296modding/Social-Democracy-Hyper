@@ -343,12 +343,21 @@ var classSizes = {
 
 var total = 0;
 
-// Calculate raw votes
 for (var party of parties) {
     var raw = 0;
 
     for (var c of classes) {
-        raw += classSizes[c] * Q[c + '_' + party];
+        var classSize = classSizes[c];
+        var support = Q[c + '_' + party];
+
+        if (classSize === undefined) {
+            console.log('Missing class size:', c);
+        }
+        if (support === undefined) {
+            console.log('Missing support:', c + '_' + party);
+        }
+
+        raw += (classSize || 0) * (support || 0);
     }
 
     Q[party + '_votes_raw'] = raw;
@@ -356,12 +365,12 @@ for (var party of parties) {
 }
 
 if (total === 0) {
+    console.log('WARNING: Vote = 0');
     total = 1;
 }
 
 for (var party of parties) {
     Q[party + '_votes'] = +((Q[party + '_votes_raw'] / total) * 100).toFixed(1);
-
     console.log(party + ': ' + Q[party + '_votes'] + '%');
 }
 
