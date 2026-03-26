@@ -15,7 +15,7 @@ At the <span style="color: #D50032;">Labor and Socialist International</span>, w
 - @scandi: Learn the path of economics and reform from the Scandinavian <span style="color: #D70926;">social democrats</span>.
 - @comintern: Forget the second international - embed a spy in the <span style="color: #D50000;">Comintern</span>'s conference.
 - @america: Contact the <span style="color: #940f0f;">Socialist Party of America</span>.
-- @wipsynd: Syndicalism wip
+- @wipsynd: Contact the <span style="color: #d50032;">Industrial</span> <span style="color:#ffffff;">Workers</span> of the ><span style="color:#d50032;">World</span>
 - @wippol: Polish wip
 - @wipsud: Sudetenland wip
 - @wiplit: Lithuania wip
@@ -67,13 +67,13 @@ choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
 on-arrival: resources -= 1
 
-The <span style="color: #940f0f;">Socialist Party of America</span> is tiny and has limited support. There is not much we can do for them, and conversely, not much they can do for us. WIP syndicalism update in the future
+The <span style="color: #940f0f;">Socialist Party of America</span> is tiny and has limited support. There is not much we can do for them, and conversely, not much they can do for us.
 
-@wipsynd
-choose-if: wip = 1
-unavailable-subtitle: Coming Soon
+@contactiww
+subtitle: They may not be very receptive.
+on-arrival: glamroc_timer = 6 if iww_contacted = 0; glamroc_timer -= 1 if iww_contacted = 1 and glamroc_timer >= 2; iww_ind_perc += (iww_contacted/1000); iww_contacted += 1;
 
-wip
+As expected, <span style="color:#d50032;">I</span><span style="color:#ffffff;">W</span><span style="color:#d50032;">W</span> was not receptive to us, however it seems like they may try to branch out to Germany
 
 @wippol
 choose-if: wip = 1
