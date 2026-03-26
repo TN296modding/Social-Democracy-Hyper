@@ -1,6 +1,6 @@
 title: Class Consciousness in the Peasant Class
 new-page: true
-view-if: nmc_cc >= 6 and nmc_cc_timer <= 0 and nmc_awakened = 0
+view-if: agr_cc >= 6 and agr_cc_timer <= 0 and agr_awakened = 0
 on-arrival: month_actions += 1; agr_cc_timer = 4
 max-visits: 4
 is-card: true
@@ -11,7 +11,7 @@ tags: party_affairs
 
 While the SPD is primarily a party of the Working Class, some proponents argue that the Peasant Class is part of the Working Class.
 
-- @unlock_nmc_cc
+- @unlock_agr_cc
 - @foster_cc
 - @petit_bourgeois
 - @return: We can deal with this later
