@@ -130,12 +130,13 @@ on-arrival: new_middle_spd += 3*(1-dissent)*(new_middle_reach+1); new_middle_spd
 We begin to organize government workers, bringing them away from the <span style="color: #D3C24D;">lib</span><span style="color: #C0A054;">eral</span> and <span style="color: #000000;">bour</span><span style="color: #C0A054;">geois</span> parties, and into the fold of the <span style="color: #C00000;">SPD</span> and the <span style="color: #FFFBF1;">AfA-</span> <span style="color: #000000;">Bund</span>
 
 @local
-on-arrival: workers_spd += 3*(1-dissent)*(workers_reach+1); old_middle_spd += 1*(1-dissent)*(old_middle_reach+1); new_middle_spd += 2*(1-dissent)*(new_middle_reach+1); unemployed_spd += 3*(1-dissent)*(unemployed_reach+1); nmc_cc += 1;
+on-arrival: workers_spd += 3*(1-dissent)*(workers_reach+1); old_middle_spd += 1*(1-dissent)*(old_middle_reach+1); new_middle_spd += 2*(1-dissent)*(new_middle_reach+1); unemployed_spd += 3*(1-dissent)*(unemployed_reach+1); nmc_cc += 1; agr_cc += 1;
 
 Our speakers have gauged the mood and are speaking to the issues that seem to most affect the workers in this moment.
 
 @wip
-view-if: wip = 1
+choose-if: wip = 1
+unavailable-subtitle: Coming Soon
 
 - @wip1: Rally for solidarity among striking workers
 - @wip2: Rally for an Economic plan
@@ -169,6 +170,7 @@ view-if: wip = 1
 wip
 
 @wip1a
-view-if: wip = 1
+choose-if: wip = 1
+unavailable-subtitle: Coming Soon
 
 wip
