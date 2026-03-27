@@ -748,25 +748,20 @@ Removed 100 resources from the party's stockpile. This doesn't go to the homeles
 
 @add10budget
 go-to: sandbox_menu
-on-arrival: {!
-Q.budget += 10;
-!}
+on-arrival: budget += 10;
+
 
 Added 10 budget to the country's stockpile.
 
 @add20budget
 go-to: sandbox_menu
-on-arrival: {!
-Q.budget += 20;
-!}
+on-arrival: budget += 20;
 
 Added 20 budget to the country's stockpile.
 
 @add100budget
 go-to: sandbox_menu
-on-arrival: {!
-Q.budget += 100;
-!}
+on-arrival: budget += 100;
 
 Added 100 budget to the country's stockpile, stop being greedy.
 
