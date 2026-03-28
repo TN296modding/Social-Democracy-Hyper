@@ -7,6 +7,7 @@ on-arrival: month_actions += 1; media_timer += 5;
 card-image: img/sangerbund.jpg
 #subtitle: Setting the direction for our newspapers and radio.
 ### add government censorship
+### Newspapers should become less popular (And this should be known to the player) Around 1990, and the option to campaign with newspapers should be removed by 2000
 
 = Media
 
@@ -102,3 +103,8 @@ choose-if: wip = 1
 unavailable-subtitle: Coming Soon
 
 wip
+
+@tv
+title: Campaign using TV advertisements
+choose-if: wip = 1
+unavailable-subtitle: Coming Soon
