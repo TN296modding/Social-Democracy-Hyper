@@ -7,6 +7,7 @@ on-departure: in_election = 0; next_election_year = next_election_year + 4; n_el
 set-jump: post_election_1928
 set-bg: img/map_2.jpg
 #face-image: img/Rothe_Wahlen_1903.jpg
+### All coalitions should be viewable, though not necessarily choosable, an Agrarian-Socialist Coalition if the Agrarian parties are left enough, joint list with the agrarian parties, coalition with the economic parties if they are left enough -- options for SPD + DDP + WP (and the Economic OtherS), SPD + DDP + DVP (True Social Liberal Coalition), SPD + DDP + DVP + WP + Others (Grand Social Liberal Coalition), SPD + DDP + Z + Agraian others or Economic others if left enough (Grand Weimar Coalition), a fomrable Progressive Coalition consisting of Grüne, SPD, DDP, and SPD Splinters, or a Greater Progressive Coaltion including the KPD if relations are high enough and SPD*0.5 + DDP + SPD Splinters (Not including the Rightcom and SAPD splinters) > KPD + SAPD + SPÖ
 
 
 = Elections, [+ month : month +] [+ year +]
