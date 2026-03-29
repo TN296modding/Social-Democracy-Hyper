@@ -54,12 +54,12 @@ headerLinks.forEach(link => {
 
 const tabContainer = document.querySelector('.tab_container');
 if (tabContainer) {
-    tabContainer.style.backgroundColor = '#999999';
+    tabContainer.style.backgroundColor = '#000000';
 }
 
 const tabButtons = document.querySelectorAll('.tab_button');
 tabButtons.forEach((button) => {
-    button.style.backgroundColor = '#999999';
+    button.style.backgroundColor = '#000000';
     if (button.id !== 'emergency_tab') {
         button.style.paddingRight = '59px';
     }
@@ -343,7 +343,9 @@ if (Q.month_actions >= 4) {
         Q.cooperatives_tax += ((Q.cooperatives/10) - (Q.cooperatives_credit))
         Q.budget += Q.budgetgrowth;
         Q.budget += (Q.economic_growth/10)
-        Q.budget += Q.cooperatives_tax
+        if (Q.cooperatives_tax > 0) {
+            Q.budget += Q.cooperatives_tax
+        }
         Q.budget += ((Q.upper_tax_rates/20)+(Q.middle_tax_rates/20)+(Q.big_bus_tax_rates/20)+(Q.small_bus_tax_rates/20))
         if (Q.dissent_percent < 5) {
             Q.resources += 1;
