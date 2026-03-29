@@ -4373,7 +4373,7 @@ if (Q.kvp_formed && Q.lvp_formed) {
 } else if (Q.lvp_formed && !Q.kvp_formed) {
     Q.cordon_sanitaire_prussia = parseFloat((Q.spd_r_prussia + Q.z_r_prussia + Q.lvp_r_prussia + Q.other_r_prussia + Q.dnvp_r_prussia).toFixed(1));
 } else {
-    Q.cordon_sanitaire_prussia = parseFloat((Q.spd_r_prussia + Q.z_r_prussia + Q.ddp_r_prussia + Q.dvp_r_prussia + Q.other_r_prussia + Q.dnvp_r).toFixed(1));
+    Q.cordon_sanitaire_prussia = parseFloat((Q.spd_r_prussia + Q.z_r_prussia + Q.ddp_r_prussia + Q.dvp_r_prussia + Q.other_r_prussia + Q.dnvp_r_prussia).toFixed(1));
 }
 
 // Q.hitler_right_coalition_prussia = parseFloat((Q.z_r_prussia + Q.dnvp_r_prussia + Q.nsdap_r_prussia).toFixed(1));
@@ -4463,15 +4463,15 @@ if (Q.unemployed <= Q.soziale_marktwirtschaft_start - 10) {
 /// fourth barrier
 Q.west_relation = ((Q.bri_relation/2) + (Q.fra_relation/2));
 if (Q.in_weimar_coalition == 1 && Q.pro_republic >= 60) {
-    Q.new_middle_ddp += 1/12;
+    Q.new_middle_ddp += 1/48;
 }
 if (Q.in_grand_coalition == 1 && Q.pro_republic >= 70 && (Q.dvp_left - Q.dvp_right) >= 10) {
-    Q.new_middle_ddp += 1/12;
-    Q.old_middle_dvp += 1/12;
+    Q.new_middle_ddp += 1/48;
+    Q.old_middle_dvp += 1/48;
 }
 if (Q.in_social_liberal_coalition == 1 && Q.pro_republic >= 75) {
-    Q.catholics_ddp += 1/12;
-    Q.workers_z -= 1/12;
+    Q.catholics_ddp += 1/48;
+    Q.workers_z -= 1/48;
 }
 /// fourth barrier
 /// third barrier
@@ -4521,7 +4521,7 @@ var choices = this._compileChoices(scene);
 if (choices && choices[0].title != "Continue...") {
     Q.has_event = 1;
 } else {
-    has_event = 0;
+    Q.has_event = 0;
 }
 // pre-load all of the event images
 if (this.ui && this.ui.show_portraits) {
