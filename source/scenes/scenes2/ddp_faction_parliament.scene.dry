@@ -1,1 +1,167 @@
+title: DDP parliamentry delegation
+new-page: true
+on-arrival: {!
+Q.ddp_r_faction = ((Q.ddp_r)*(Q.reichstag_size))
+Q.ddp_r_faction = Math.ceil(Q.ddp_r_faction);
+Q.ddp_party_line_lpr = Q.ddp_r_faction
+Q.ddp_party_left = ((Q.ddp_r_faction)*(Q.ddp_left_ddp/10))
+Q.ddp_party_right = ((Q.ddp_r_faction)*(Q.ddp_right_ddp/10))
+Q.ddp_party_left = Math.floor(Q.ddp_party_left)
+Q.ddp_party_right = Math.floor(Q.ddp_party_right)
+Q.ddp_party_line_lpr -= ((Q.ddp_party_left)+(Q.ddp_party_right))
 
+Q.ddp_r_faction = ((Q.ddp_r)*(Q.reichstag_size))
+Q.ddp_r_faction = Math.ceil(Q.ddp_r_faction);
+Q.ddp_party_line_ppn = Q.ddp_r_faction
+Q.ddp_party_pacifist = ((Q.ddp_r_faction)*(Q.ddp_pacifism_ddp/10))
+Q.ddp_party_nationalism = ((Q.ddp_r_faction)*(Q.ddp_nationalism_ddp/10))
+Q.ddp_party_pacifist = Math.floor(Q.ddp_party_pacifist)
+Q.ddp_party_nationalism = Math.floor(Q.ddp_party_nationalism)
+Q.ddp_party_line_ppn -= ((Q.ddp_party_pacifist)+(Q.ddp_party_nationalism))
+
+Q.ddp_r_faction = ((Q.ddp_r)*(Q.reichstag_size))
+Q.ddp_r_faction = Math.ceil(Q.ddp_r_faction);
+Q.ddp_party_line_wlpwr = Q.ddp_r_faction
+Q.ddp_party_work_left = ((Q.ddp_r_faction)*(Q.ddp_work_left_ddp/20))
+Q.ddp_party_work_right = ((Q.ddp_r_faction)*(Q.ddp_work_right_ddp/20))
+Q.ddp_party_work_left = Math.floor(Q.ddp_party_work_left)
+Q.ddp_party_work_right = Math.floor(Q.ddp_party_work_right)
+Q.ddp_party_line_wlpwr -= ((Q.ddp_party_work_left)+(Q.ddp_party_work_right))
+
+const inputPercentages = {
+  ddp_wlpwr: Q.ddp_party_line_wlpwr,
+  ddp_wl: Q.ddp_party_work_left,
+  ddp_wr: Q.ddp_party_work_right,
+  ddp_ppn: Q.ddp_party_line_ppn,
+  ddp_p: Q.ddp_party_pacifist,
+  ddp_n: Q.ddp_party_nationalism,
+  ddp_lpr: Q.ddp_party_line_lpr,
+  ddp_l: Q.ddp_party_left,
+  ddp_rt: Q.ddp_party_right
+};
+!}
+A dissenting member is one who will vote based on their ideology, rather than the party line, on a decision. This is assuming that the party line doesn't match the ideology in question.
+
+- @lpr: View dissenting Left & Right seats
+- @ppn: View dissenting Pacifist & Nationalist seats
+- @wlpwr: View dissenting Party-Cooperation members
+
+@lpr
+on-display: {!
+data = [{
+    "id": "ddp_l",
+    "legend": "Left-wing delegates",
+    "name": "Left-wing delegates",
+    "seats": Q.ddp_party_left,
+}, {
+    "id": "ddp_lpr",
+    "legend": "Party Line delegates",
+    "name": "Party Line delegates",
+    "seats": Q.ddp_party_line_lpr,
+}, {
+    "id": "ddp_rt",
+    "legend": "Right-wing delegates",
+    "name": "Right-wing delegates",
+    "seats": Q.ddp_party_right,
+}];
+
+if (window && d3) {
+    var width = 500;
+    var height = 500;
+    var screenWidth = document.getElementById('content').offsetWidth;
+    if (screenWidth < width - 50) {
+        width = screenWidth - 50;
+        height = width;
+        document.getElementById("ddp_faction_parliament_lpr").style.height = screenWidth/2 + "px";
+    }
+    var parliament = d3.parliament();
+    parliament.width(width).height(height).innerRadiusCoef(0.4);
+    parliament.enter.fromCenter(true).smallToBig(true);
+    parliament.exit.toCenter(false).bigToSmall(true);
+    d3.select("#ddp_faction_parliament_lpr").datum(data).call(parliament);
+}
+!}
+
+{!<svg id="ddp_faction_parliament_lpr" style="width: 500px; height: 250px;"> </svg>!}
+
+text
+
+@ppn
+on-display: {!
+data = [{
+    "id": "ddp_p",
+    "legend": "Pacifist delegates",
+    "name": "Pacifist delegates",
+    "seats": Q.ddp_party_pacifist,
+}, {
+    "id": "ddp_ppn",
+    "legend": "Party Line delegates",
+    "name": "Party Line delegates",
+    "seats": Q.ddp_party_line_ppn,
+}, {
+    "id": "ddp_n",
+    "legend": "Nationalist delegates",
+    "name": "Nationalist delegates",
+    "seats": Q.ddp_party_nationalism,
+}];
+
+if (window && d3) {
+    var width = 500;
+    var height = 500;
+    var screenWidth = document.getElementById('content').offsetWidth;
+    if (screenWidth < width - 50) {
+        width = screenWidth - 50;
+        height = width;
+        document.getElementById("ddp_faction_parliament_ppn").style.height = screenWidth/2 + "px";
+    }
+    var parliament = d3.parliament();
+    parliament.width(width).height(height).innerRadiusCoef(0.4);
+    parliament.enter.fromCenter(true).smallToBig(true);
+    parliament.exit.toCenter(false).bigToSmall(true);
+    d3.select("#ddp_faction_parliament_ppn").datum(data).call(parliament);
+}
+!}
+
+{!<svg id="ddp_faction_parliament_ppn" style="width: 500px; height: 250px;"> </svg>!}
+
+text
+
+@wlpwr
+on-display: {!
+data = [{
+    "id": "ddp_wl",
+    "legend": "Left-cooperative delegates",
+    "name": "Left-cooperative delegates",
+    "seats": Q.ddp_party_work_left,
+}, {
+    "id": "ddp_wlpwr",
+    "legend": "Party Line delegates",
+    "name": "Party Line delegates",
+    "seats": Q.ddp_party_line_wlpwr,
+}, {
+    "id": "ddp_wr",
+    "legend": "Right-cooperative delegates",
+    "name": "Right-cooperative delegates",
+    "seats": Q.ddp_party_work_right,
+}];
+
+if (window && d3) {
+    var width = 500;
+    var height = 500;
+    var screenWidth = document.getElementById('content').offsetWidth;
+    if (screenWidth < width - 50) {
+        width = screenWidth - 50;
+        height = width;
+        document.getElementById("ddp_faction_parliament_wlpwr").style.height = screenWidth/2 + "px";
+    }
+    var parliament = d3.parliament();
+    parliament.width(width).height(height).innerRadiusCoef(0.4);
+    parliament.enter.fromCenter(true).smallToBig(true);
+    parliament.exit.toCenter(false).bigToSmall(true);
+    d3.select("#ddp_faction_parliament_wlpwr").datum(data).call(parliament);
+}
+!}
+
+{!<svg id="ddp_faction_parliament_wlpwr" style="width: 500px; height: 250px;"> </svg>!}
+
+text
