@@ -1,10 +1,10 @@
 title: Liberalism in the Peasant Class
 new-page: true
-view-if: agr_cc >= 6 and agr_cc_timer <= 0 and agr_awakened = 0
+view-if: agr_lib >= 6 and agr_cc_timer <= 0 and agr_liberalised = 0
 on-arrival: month_actions += 1; agr_cc_timer = 4
 max-visits: 4
 is-card: true
-card-image: img/freiheit_und_arbeit.jpg
+card-image: img/volksgemeinschaft_dstp.jpg
 tags: party_affairs
 
 = Socialism in the Peasant Class
