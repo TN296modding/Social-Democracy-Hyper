@@ -1,0 +1,61 @@
+title: Liberal Trade Unions
+new-page: true
+title: Liberalism in the Peasant Class
+view-if: trun_lib >= 2 and trun_lib_timer <= 0 and lib_trun_trvthnvke = 0
+on-arrival: month_actions += 1 if lbtu_visiting = 0; trun_lib_timer = 4; lbtu_visiting = 1;
+max-visits: 20
+is-card: true
+card-image: img/volksgemeinschaft_dstp.jpg
+tags: party_affairs
+
+= The Liberal Trade Unions
+
+[? if trun_lib_true = 0 : Every significant party has their associated trade unions - Even the right wing, the DVP and the DNVP have the DHV. The exception to this rule is, of course, the DDP. ?][? if trun_lib_true = 1 : What should we do with the DDP-associated Trade Unions? ?]
+
+- @lib_trun_menu: Go to options
+- @easy_discard
+- @root
+
+@lib_trun_menu
+go-to: trun_lib_false if trun_lib_true = 0; trun_lib_true if trun_lib_true = 1
+
+@trun_lib_false
+
+- @true_lib_trade_unions
+- @hirsch_duncker_trade_unions
+- @boost_lib_trun
+- @postpone
+- @no_lib_trun
+
+@true_lib_trade_unions
+title: Form "True" Liberal trade unions
+subtitle: It will likely be harder to convince the party to support this style fo union
+choose-if: lib_trun_support_hard > 50
+unavailable-subtitle: There is not enough support. Only [+ lib_trun_support_hard +]% of the party supports these
+
+wip
+
+@hirsch_duncker_trade-unions
+title: Form "Hirsch-Duncker" style trade unions, which are class-collaborationist
+subtitle: It will likely be easier to convince the party to support this style of union
+choose-if: lib_trun_support_easy > 50
+unavailable-subtitle: There is not enough support. Only [+ lib_trun_support_eaasy +]% of the party supports these
+
+wip
+
+@boost_lib_trun
+title: Boost support for the trade unions
+on-arrival: lib_trun_support_easy += (10+(ddp_left/10)); lib_trun_support_hard += (5+(ddp_left/10));
+
+wip
+
+@postpone
+title: We will deal with this later
+go-to: trade_unions_ddp
+
+@no_lib_trun
+title: Unions are nothing but Socialist foolery, we need not have any
+subtitle: Labour will be displeased
+on-arrival: lib_trun_trvthnvke = 1
+
+wip
