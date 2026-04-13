@@ -13,10 +13,10 @@ The American film *All Quiet on the Western Front*, based on the German novel *I
 
 As an anti-war film, it is the target of major protest by <span style="color: #7A3C00;">far</span>-<span style="color: #3E88B3;">right</span> actors, especially the <span style="color: #7A3C00;">Nazis</span> and the <span style="color: #3E88B3;">**Stahlhelm**</span>. They are calling for the government to ban the film. If we do not ban it, the <span style="color: #7A3C00;">**SA**</span> threatens to violently stop the film from being shown or watched.
 
-- @ban: Ban the film, to prevent <span style="color: #7A3C00;">Nazi</span> violence.
-- @allow: Allow the film to be shown.
-- @allow_protect: Allow the film to be shown, and use the Prussian police to prevent <span style="color: #7A3C00;">Nazi</span> disruptions.
-- @everyone: In fact, everyone needs to learn the lessons of this film. Give free tickets to students and government employees.
+- @ban_ddp: Ban the film, to prevent <span style="color: #7A3C00;">Nazi</span> violence.
+- @allow_ddp: Allow the film to be shown.
+- @allow_protect_ddp: Allow the film to be shown, and use the Prussian police to prevent <span style="color: #7A3C00;">Nazi</span> disruptions.
+- @everyone_ddp: In fact, everyone needs to learn the lessons of this film. Give free tickets to students and government employees.
 
 @ban
 on-arrival: old_middle_nsdap += 5; new_middle_nsdap += 3; workers_nsdap += 2; unemployed_nsdap += 2; sa_strength += 50; nationalism += 6; pro_republic -= 5
