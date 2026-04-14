@@ -39,17 +39,17 @@ on-arrival: austria_civil_war = 1
 
 Neither side is backing down, and the <span style="color: #A50034;">**SDAPÖ**</span> have formed an alternative government after defeating the government troops in some cities. Austria is in a state of civil war.
 
-- @support_sdapo_party
-- @support_sdapo_govt
-- @force_peace
-- @long_war_2
+- @support_sdapo_party_ddp
+- @support_sdapo_govt_ddp
+- @force_peace_ddp
+- @long_war_2_ddp
 
 @support_sdapo_party_ddp
 title: As a party, the <span style="color: #c00000;">**SPD**</span> will provide the <span style="color: #A50034;">**SDAPÖ**</span> with support.
 subtitle: -2 resources
 choose-if: resources >= 2
 on-arrival: resources -= 2; sdapo_strength += 1
-go-to: sdapo_victory if sdapo_strength >= 6; long_war_2 if sdapo_strength < 6
+go-to: sdapo_victory_ddp if sdapo_strength >= 6; long_war_2_ddp if sdapo_strength < 6
 
 The <span style="color: #c00000;">**SPD**</span> raises its resources to provide arms and volunteers for the <span style="color: #A50034;">**SDAPÖ**</span>.
 
@@ -57,7 +57,7 @@ The <span style="color: #c00000;">**SPD**</span> raises its resources to provide
 title: The Foreign Ministry will support the democratic Austrian forces.
 view-if: spd_in_government and foreign_minister_party = "SPD"
 on-arrival: sdapo_strength += 1
-go-to: sdapo_victory if sdapo_strength >= 6; long_war_2 if sdapo_strength < 6
+go-to: sdapo_victory_ddp if sdapo_strength >= 6; long_war_2_ddp if sdapo_strength < 6
 
 We provide diplomatic and some financial and material support to the <span style="color: #A50034;">**SDAPÖ**</span> forces.
 
