@@ -133,10 +133,6 @@ Q.trun_infl = 3;
 Q.trun_ind_perc = Math.round(0.066 * 1000) / 1000;
 Q.trun_rur_perc = Math.round(0.006 * 1000) / 1000;
 Q.trun_nmc_perc = Math.round(0.003 * 1000) / 1000;
-Q.iww_ind_perc = Math.round(0.000 * 1000) / 1000;
-Q.iww_nmc_perc = Math.round(0.000 * 1000) / 1000;
-Q.iww_rur_perc = Math.round(0.000 * 1000) / 1000;
-Q.iww_unm_perc = Math.round(0.000 * 1000) / 1000;
 Q.chrun_tot_perc = Math.round(0.010 * 1000) / 1000;
 
 // hmm... maybe we can play nice with Hindenburg???
@@ -1237,7 +1233,7 @@ go-to: 1928_main
 @1928_main
 audio: shuffle music/1928_1930/FruhlingsliedMendelssohn.mp3 music/1928_1930/AUF_HOHEN_BERGEN_noise_reduced.mp3 music/1928_1930/MarekWeber.mp3 music/1928_1930/BAUERNKAPELLE.mp3 music/1928_1933/DERLINDENBAUM_normalized.mp3 music/1928_1933/ZurSonne_zurFreiheit.mp3 music/1928_1933/arbeiter_marseille.mp3 music/1928_1933/Wann_wir_schreiten_Seit_an_Seit.mp3 music/1930_1933/Internationale-de_normalized.ogg music/1928_1930/LiedDerPompadour.mp3 music/1928_1933/SozialistenMarsch.mp3
 new-page: true
-go-to: main if difficulty >= 0; main.main_easy if difficulty < 0
+go-to: main_ddp if difficulty >= 0; main_ddp.main_easy if difficulty < 0
 
 
 = 1928
