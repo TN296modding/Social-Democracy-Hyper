@@ -35,7 +35,7 @@ We attempt to impress upon our coalition partners the gravity of the potential A
 @end_toleration_ddp
 view-if: spd_toleration = 1
 subtitle: This is difficult; all of the right-of-center parties support this policy.
-go-to: end_toleration_success if spd_r + kpd_r >= 50; end_toleration_fail if spd_r + kpd_r < 50
+go-to: end_toleration_success_ddp if spd_r + kpd_r >= 50; end_toleration_fail_ddp if spd_r + kpd_r < 50
 
 @end_toleration_success_ddp
 on-arrival: time_to_election = 3; spd_in_government = 0; in_grand_coalition = 0; spd_toleration = 0; spd_toleration_right = 0; left_dissent -= 5; dvp_relation -= 3; ddp_relation -= 3; z_relation -= 3; lvp_relation -= 3; ddp_right += 2; dvp_right += 3;
