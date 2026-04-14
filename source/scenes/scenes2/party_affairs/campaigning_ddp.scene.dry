@@ -3,7 +3,7 @@ new-page: true
 view-if: campaigning_timer <= 0
 on-arrival: month_actions += 1;
 is-card: true
-card-image: img/ddp_campaign.png
+card-image: img/DDP_campaign.png
 frequency: 100
 tags: party_affairs_ddp
 
