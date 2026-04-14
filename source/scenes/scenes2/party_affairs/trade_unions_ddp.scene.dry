@@ -1,6 +1,5 @@
 title: Liberal Trade Unions
 new-page: true
-title: Liberalism in the Peasant Class
 view-if: trun_lib >= 2 and trun_lib_timer <= 0 and lib_trun_trvthnvke = 0
 on-arrival: month_actions += 1 if lbtu_visiting = 0; trun_lib_timer = 4; lbtu_visiting = 1;
 max-visits: 20
