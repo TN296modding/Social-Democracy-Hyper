@@ -26,6 +26,8 @@ on-arrival: rural_ddp += 6; rural_dvp += 3; spd_right += 3 if rural_spd > 6; cnb
 
 We have sucessfully fostered Class consciousness in the Peasant Class, and pushed the Agrarian-Conservative parties left.
 
+- @ddp_continue
+
 @foster_lib
 title: Push Socialist ideas onto the Peasant Class
 subtitle: This will make it easier to make them class-conscious
@@ -33,6 +35,10 @@ on-arrival: agr_lib += 1; rural_ddp += 1; rural_dvp += 0.5; rural_dvp += 0.5 if 
 
 We are progressing towards class-consciousness in the Peasant Class
 
+- @ddp_continue
+
 @too_conservative
 title: The Peasant Class is far too conservative, and wouldn't truly be able to embrace liberalism - There's nothing we can do
 on-arrival: agr_liberalism = -1; rural_ddp -= 2
+
+- @ddp_continue
