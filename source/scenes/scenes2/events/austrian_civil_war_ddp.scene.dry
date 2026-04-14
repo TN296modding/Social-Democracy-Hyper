@@ -21,18 +21,18 @@ The crisis in Austria is continuing. The "<span style="color: #7A3C00;">Austrofa
 
 Eventually...
 
-- @crushed
-- @long_war
-- @sdapo_victory
+- @crushed_ddp
+- @long_war_ddp
+- @sdapo_victory_ddp
 
-@crushed
+@crushed_ddp
 title: The rebellious Schutzbund has been crushed.
 on-arrival: austria_defeat = 1
 view-if: sdapo_strength < 4
 
 The uprising lasted for no more than a few days before it was crushed. The Schutzbund and <span style="color: #A50034;">**SDAPÖ**</span> were too weak and too divided to stand against the forces of the state.
 
-@long_war
+@long_war_ddp
 title: It is a civil war.
 view-if: sdapo_strength = 5 or sdapo_strength = 4
 on-arrival: austria_civil_war = 1
@@ -44,7 +44,7 @@ Neither side is backing down, and the <span style="color: #A50034;">**SDAPÖ**</
 - @force_peace
 - @long_war_2
 
-@support_sdapo_party
+@support_sdapo_party_ddp
 title: As a party, the <span style="color: #c00000;">**SPD**</span> will provide the <span style="color: #A50034;">**SDAPÖ**</span> with support.
 subtitle: -2 resources
 choose-if: resources >= 2
@@ -53,7 +53,7 @@ go-to: sdapo_victory if sdapo_strength >= 6; long_war_2 if sdapo_strength < 6
 
 The <span style="color: #c00000;">**SPD**</span> raises its resources to provide arms and volunteers for the <span style="color: #A50034;">**SDAPÖ**</span>.
 
-@support_sdapo_govt
+@support_sdapo_govt_ddp
 title: The Foreign Ministry will support the democratic Austrian forces.
 view-if: spd_in_government and foreign_minister_party = "SPD"
 on-arrival: sdapo_strength += 1
@@ -61,7 +61,7 @@ go-to: sdapo_victory if sdapo_strength >= 6; long_war_2 if sdapo_strength < 6
 
 We provide diplomatic and some financial and material support to the <span style="color: #A50034;">**SDAPÖ**</span> forces.
 
-@force_peace
+@force_peace_ddp
 title: Can we bring the sides together for a peace?
 view-if: spd_in_government and foreign_minister_party = "SPD" and sdapo_strength = 5
 on-arrival: austria_peace = 1; pro_republic += 3; coup_progress -= 1; ddp_left += 2; dvp_left += 2; lvp_left += 2
@@ -70,14 +70,14 @@ The Austrian government obviously sees us as biased, so there is no way they wil
 
 Given the <span style="color: #A50034;">**SDAPÖ**</span>'s starting position, this is treated as a victory. Now begins the long work of reconstruction...
 
-@long_war_2
+@long_war_2_ddp
 title: There is nothing we can do.
 on-arrival: z_relation -= 6; dvp_relation -= 6; ddp_relation -= 3; catholics_spd -= 5; old_middle_spd -= 5; coalition_dissent += 1; economic_growth -= 0.5; ddp_right += 2; dvp_right += 2; lvp_right += 2
 
 No matter our efforts, the war continues. Too many lives are extinguished. Refugees begin to flow into Germany, and trade suffers. Many are calling our Austrian interference a mistake.
 
 
-@sdapo_victory
+@sdapo_victory_ddp
 title: The <span style="color: #7A3C00;">Austrofascists</span> are backing down!
 on-arrival: sdapo_win = 1; pro_republic += 5; west_relation += 1; east_relation += 1; austria_victory = 1; reichswehr_loyalty += 0.1; coup_progress -= 2; ddp_left += 3; dvp_left += 3; lvp_left += 3
 view-if: sdapo_strength >= 6
