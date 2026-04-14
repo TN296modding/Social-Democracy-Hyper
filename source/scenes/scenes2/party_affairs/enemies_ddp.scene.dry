@@ -28,20 +28,28 @@ on-arrival: enemies = "anti-democratic parties"; new_middle_kpd -= 1; new_middle
 
 Attacking the <span style="color: #7A3C00;">far</span>-[? if dnvp_ideology == "Radical": <span style="color: #3E88B3;">right</span>?][? if dnvp_ideology == "Moderate": <span style="color: #003755;">right</span>?] and <span style="color: #700000;">left</span> is popular among all but the left wing of our party, who would prefer to be fighting the bourgeois parties. This might also hamper our ability to reconcile with the <span style="color: #700000;">**KPD**</span> in the future.
 
+- @ddp_continue
+
 @far_right
 on-arrival: enemies = "far right"; new_middle_nsdap -= 2.5; new_middle_dnvp -= 2 if dnvp_ideology == "Radical"; new_middle_dnf -= 2; old_middle_dnvp -= 1 if dnvp_ideology == "Radical"; old_middle_nsdap -= 1; old_middle_dnf -= 0.5;
 
 Attacking the <span style="color: #7A3C00;">far</span>-<span style="color: #3E88B3;">right</span> is popular among the entire party, although the left considers the bourgeois parties to be just as dangerous, while the right is critical of our lack of response to the <span style="color: #700000;">**KPD**</span>. Our bourgeois coalition partners are also skeptical of our lack of commitment to anti-communism.
+
+- @ddp_continue
 
 @nsdap
 on-arrival: enemies = "NSDAP"; nazi_urgency += 1; new_middle_nsdap -= 3; old_midle_nsdap -= 3; new_middle_nsdap += 3 if nsdap_votes < 8; old_middle_nsdap += 3 if nsdap_votes < 8
 
 [? if nazi_urgency == 0 or nsdap_votes < 10: The <span style="color: #7A3C00;">**NSDAP**</span> is a tiny party right now, with more bark than bite. Many in our party are questioning our choices. [? if nsdap_votes < 8: Worst still, giving them too much attention might only end up helping them. ?] ?][? if nazi_urgency > 0 and nsdap_votes >= 10 : The <span style="color: #7A3C00;">Nazis</span> are the most urgent problem for us to deal with. ?]
 
+- @ddp_continue
+
 @kpd
 on-arrival: enemies = "KPD"; kpd_relation -= 15; dvp_relation += 7; dnvp_relation += 4; z_relation += 6; workers_kpd -= 1; unemployed_kpd -= 1; new_middle_kpd -= 3; dvp_left += 1; ddp_left += 0.5; ddp_cohesion += 0.5;
 
 Attacking the <span style="color: #700000;">**KPD**</span> is supported by all but the most left-wing <span style="color: #c00000;">socialists</span>, and wins us some measure of approval among the bourgeois parties. However, If we are to reconcile with the <span style="color: #700000;">**KPD**</span>, this may not be the best choice.
+
+- @ddp_continue
 
 @left
 on-arrival: enemies = "Socialism";
@@ -50,12 +58,16 @@ unavailable-subtitle: Coming Soon
 
 wip
 
+- @ddp_continue
+
 @dvp
 on-arrival: enemies = "DVP"
 choose-if: wip == "DVP"
 unavailable-subtitle: Coming Soon
 
 wip
+
+- @ddp_continue
 
 @dnvp
 on-arrival: enemies = "DNVP"
@@ -64,9 +76,13 @@ unavailable-subtitle: Coming Soon
 
 wip
 
+- @ddp_continue
+
 @antiprog
 on-arrival: enemies = "Z, DVP, DNVP, NSDAP, and Independents"
 choose-if: wip == "YES" 
 unavailable-subtitle: Coming Soon
 
 wip
+
+- @ddp_continue
