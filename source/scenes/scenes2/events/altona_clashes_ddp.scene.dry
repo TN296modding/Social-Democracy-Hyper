@@ -2,7 +2,7 @@ title: <span style="color: #7A3C00;">Nazi</span> March in Altona
 new-page: true
 subtitle: An <span style="color: #7A3C00;">**SA**</span> demonstration, with the potential for violence
 tags: event
-view-if: year == 1932 and month == 7 and sa_banned == 0 and spd_prussia == 1 and chancellor != "Papen" and not altona_seen
+view-if: year == 1932 and month == 7 and sa_banned == 0 and spd_prussia == 1 and chancellor != "Papen" and not altona_seen and ddp_start = 1
 max-visits: 1
 
 = <span style="color: #7A3C00;">Nazi</span> March in Altona
