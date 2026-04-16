@@ -25,12 +25,12 @@ The <span style="color: #c00000;">**SPD**</span> is torn between many different 
 
 [? if ideology != 0 : We have previously chosen a [+ ideology +] ideology. Changing it will likely have drawbacks. ?]
 
-- @soc_lib
-- @soc_repub
-- @progressives
-- @centre_lib
-- @business
-- @lib_corporatism
+- @soc_lib: Building up Liberalism among the working class and allying the Socialist parties is our primary goals
+- @soc_repub: Undermining the Anti-Democratic right is our primary goal
+- @progressives: Maintain the Progressive course of mediating between the Socialist and Bourgeois parties
+- @centre_lib: Pursue the Centre course of maintaing stability both within the Coalition and the Party
+- @business: Allying with the businesses is the only way to keep our party afloat
+- @lib_corporatism: Continuing the Corporatist course of Artur Mahraun is best
 - @easy_discard
 
 @soc_repub
@@ -89,6 +89,7 @@ on-departure: ideology = "Business Centered"; busi_ddp_strength += 8; busi_ddp_d
 The Business Wing, represented by Dietrich and Hellpach, support a Business-friendly course, while keeping the Anti-democratic forces at bay
 
 @lib_corporatism
+view-if: dstp_formed = 1
 on-arrival: {!
 if (Q.ideology && Q.ideology != "Liberal Corporatist") {
     Q.changed = 1;
