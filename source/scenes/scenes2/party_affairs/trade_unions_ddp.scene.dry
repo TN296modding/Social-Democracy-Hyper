@@ -80,7 +80,7 @@ wip
 - @negotiate: Help negotiate better conditions for workers
 - @ddpinfl_dfa: Increase the DDP's influence in the DFA
 - @truninfl_dfa: Increase the DFA's bargaining power
-- @busi_infldfa: Increase the DDP's influence among businesses
+- @busi_infl_dfa: Increase the DDP's influence among businesses
 - @nmc_member: Influence the New Middle Class to join the DFA
 - @worker_member: Influence the Working Class to join the DFA
 - @root_ddp: Do none of these actions
