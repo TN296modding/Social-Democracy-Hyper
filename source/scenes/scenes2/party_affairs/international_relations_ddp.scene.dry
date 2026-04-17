@@ -8,23 +8,19 @@ card-image: img/international.jpg
 max-visits: 40
 #subtitle: Building ties with our fraternal socialist parties.
 
-At the <span style="color: #D50032;">Labor and Socialist International</span>, we can forge contacts with our fraternal <span style="color: #c00000;">socialist</span> parties in <span style="color: #001489;">Europe</span> and across the world.
+There are many Liberal parties across the world - who shall we contact?
 
-- @fr_uk: Build relationships with the <span style="color: #002654;">French</span> <span style="color: #ff0000;">SFIO</span> and <span style="color: #C8102E;">British</span> <span style="color: #f0456a;">Labour Party</span> to move their governments in Germany's favor.
-- @austria: Learn organization and street fighting from the <span style="color: #EF3340;">Au</span><span style="color: #ffffff;"><span style="color: #ffffff;">str</span></span><span style="color: #EF3340;">ian</span> <span style="color: #A50034;">SDAPÖ</span>.
-- @scandi: Learn the path of economics and reform from the Scandinavian <span style="color: #D70926;">social democrats</span>.
-- @comintern: Forget the second international - embed a spy in the <span style="color: #D50000;">Comintern</span>'s conference.
-- @america: Contact the <span style="color: #940f0f;">Socialist Party of America</span>.
-- @contactiww: Contact the <span style="color: #d50032;">Industrial</span> <span style="color:#ffffff;">Workers</span> of the ><span style="color:#d50032;">World</span>
-- @wippol: Polish wip
-- @wipsud: Sudetenland wip
-- @wiplit: Lithuania wip
-- @wipdnz: Danzig wip
+- @fr_uk_bel: Contact Liberal Parties in France, Belgium, and Britain
+- @america_union: Contact the American Federation of Labour (WIP for Liberal Trade Unions)
+- @minor: Contact minor Liberal parties across the world
+- @inflcom: Plant spies in Communist activities across the world 
+- @america: Contact the Democrats (Are the Left-Liberal by 1928? Or were the Republicans the progressive party?)
+- @dstp_expansion: Ignite German nationalism within lost territories
 - @return: We do not need international contacts at the moment.
 - @easy_discard
 - @cancel_advisor_action
 
-@fr_uk
+@fr_uk_bel
 subtitle: -1 resources
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
@@ -32,7 +28,7 @@ on-arrival: resources -= 1; west_relation += 1; reformist_strength += 3; pacifis
 
 The <span style="color: #f0456a;">socialists</span> of <span style="color: #002654;">France</span> and <span style="color: #C8102E;">Britain</span> can influence their governments to be friendlier towards Germany. Hopefully they will reduce our reparations burden.
 
-@austria
+@america_union
 subtitle: -1 resources [? if austrian_parliament_seen and not austrian_civil_war_seen: - We will also help the Austrians oppose their dictatorship. ?]
 view-if: not rb_explode
 choose-if: resources >= 1
@@ -45,7 +41,7 @@ Our Reichsbanner can learn much in paramilitary organization and training from t
 [? if austrian_parliament_seen and not austrian_civil_war_seen: We are also helping the Austrian <span style="color: #A50034;">Social Democratic Worker's Party</span> build up their resources in preparation for a future struggle, legally and illegally. ?]
 
 
-@scandi
+@minor
 subtitle: -1 resources
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
@@ -53,7 +49,7 @@ on-arrival: reformist_strength += 3; wtb_support += 1; resources -= 1; moderate_
 
 The programs of the Nordic <span style="color: #D70926;">socialists</span> involve active government intervention in the economy. We can learn from their economic strategies, and how they moved beyond their working-class base to attract a broader set of constituents.
 
-@comintern
+@inflcom
 subtitle: -1 resources
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
@@ -69,36 +65,6 @@ on-arrival: resources -= 1
 
 The <span style="color: #940f0f;">Socialist Party of America</span> is tiny and has limited support. There is not much we can do for them, and conversely, not much they can do for us.
 
-@contactiww
-subtitle: They may not be very receptive.
-on-arrival: glamroc_timer = 6 if iww_contacted = 0; glamroc_timer -= 1 if iww_contacted = 1 and glamroc_timer >= 2; iww_ind_perc += (iww_contacted/1000); iww_contacted += 1;
-
-As expected, <span style="color:#d50032;">I</span><span style="color:#ffffff;">W</span><span style="color:#d50032;">W</span> was not receptive to us, however it seems like they may try to branch out to Germany
-
-@wippol
-choose-if: wip = 1
-unavailable-subtitle: Coming Soon
-
-wip
-
-@wipsud
-choose-if: wip = 1
-unavailable-subtitle: Coming Soon
-
-wip
-
-@wiplit
-choose-if: wip = 1
-unavailable-subtitle: Coming Soon
-
-wip
-
-@wipdnz
-choose-if: wip = 1
-unavailable-subtitle: Coming Soon
-
-wip
-
-@reduce
+@dstp_expansion
 
 We do not need the international contacts at the moment.
