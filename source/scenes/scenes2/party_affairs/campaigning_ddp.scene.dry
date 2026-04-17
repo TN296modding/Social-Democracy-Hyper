@@ -25,7 +25,7 @@ Whether or not we are in an electoral campaign, the party is always trying to br
 subtitle: -1 resources
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
-on-arrival: workers_ddp += 1*(1-dissent)*(workers_reach+1); workers_ddp -= 1 if unemployed >= 20 and ddp_in_government; workers_ddp -= 0.5 if unemployed >= 30 and ddp_in_government; workers_ddp += 1.5*(1-dissent) if economic_plan_adopted = 1; resources -= 1; workers_spd += 1.5*(1-dissent) if pro_worker >= 8;
+on-arrival: workers_ddp += 1*(1-dissent)*(workers_reach+1); workers_ddp -= 1 if unemployed >= 20 and ddp_in_government; workers_ddp -= 0.5 if unemployed >= 30 and ddp_in_government; workers_ddp += 1.5*(1-dissent) if economic_plan_adopted = 1; resources -= 1; workers_spd += 1.5*(1-dissent) if pro_worker >= 8; trun_lib += 1
 
 We have increased our campaigning among the workers, however most are unmoved by our efforts. [? if unemployed >= 15: The high levels of unemployment make our campaign more difficult. ?][? if wtb_adopted = 1 : Adopting the [+ economic_plan_name +] gives us a new rallying point around which to attract workers. ?]
 
