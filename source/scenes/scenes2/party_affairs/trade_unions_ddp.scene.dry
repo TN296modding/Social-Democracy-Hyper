@@ -99,17 +99,24 @@ wip
 @ddpinfl_dfa
 on-arrival: workers_ddp_base_infl_true += 0.25 if workers_ddp_base_infl_true <= 1.25; workers_ddp_base_infl += 0.25 if workers_ddp_base_infl_true <= 1.25; workers_ddp_base += workers_ddp_base_infl; workers_ddp_base_infl = 0; ddp_lbtu_infl += 1; lbtu_power += 0.25;
 
+wip
+
 @truninfl_dfa
 on-arrival: lbtu_power += 1.25; lbtu_busi_relation += 2
 
+wip
+
 @busi_infl_dfa
+on-arrival: ddp_busi_infl += 1; lbtu_busi_relation += 7
 
 wip
 
 @nmc_member
+on-arrival: nmc_ddp_base += 0.1 if nmc_ddp_base <= 1; nmc_ddp_base += 0.02 if nmc_ddp_base > 1
 
 wip
 
 @worker_member
+on-arrival: workers_ddp_base += 0.1 if workers_ddp_base <= 3; workers_ddp_base += 0.05 if workers_ddp_base > 3;
 
 wip
