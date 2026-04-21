@@ -80,10 +80,7 @@ if (window && d3) {
 
 [? if ddp_start = 0 : Not for SPD ?][? if ddp_start : Text ?]
 
-- @optionssss: Continue
-
-@optionssss
-go-to: root_ddp
+- @optionssss
 
 @ppn
 view-if: ddp_start
@@ -126,10 +123,7 @@ if (window && d3) {
 
 [? if ddp_start = 0 : Not for SPD ?][? if ddp_start : Text ?]
 
-- @optionssss: Continue
-
-@optionssss
-go-to: root_ddp
+- @optionssss
 
 @wlpwr
 view-if: ddp_start
@@ -172,7 +166,8 @@ if (window && d3) {
 
 [? if ddp_start = 0 : Not for SPD ?][? if ddp_start : Text ?]
 
-- @optionssss: Continue
+- @optionssss
 
 @optionssss
+title: Continue wip
 go-to: root_ddp
