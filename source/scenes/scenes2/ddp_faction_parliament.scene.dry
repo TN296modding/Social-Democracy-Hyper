@@ -2,6 +2,7 @@ title: DDP parliamentry delegation
 new-page: true
 is-special: true
 on-arrival: {!
+if Q.ddp_start {
 Q.ddp_r_faction = ((Q.ddp_r)*(Q.reichstag_size))
 Q.ddp_r_faction = Math.ceil(Q.ddp_r_faction);
 Q.ddp_party_line_lpr = Q.ddp_r_faction
@@ -150,11 +151,12 @@ if (window && d3) {
     parliament.exit.toCenter(false).bigToSmall(true);
     d3.select("#ddp_faction_parliament_wlpwr").datum(data).call(parliament);
 }
+}
 !}
 
 {!<svg id="ddp_faction_parliament_wlpwr" style="width: 500px; height: 250px;"> </svg>!}
 
-text
+[? if ddp_start = 0 : Not for SPD ?][? if ddp_start : Text ?]
 
 - @optionssss: Continue
 
