@@ -441,6 +441,13 @@ Q.wp_right = 8;
 Q.rural_others_left = 0;
 Q.rural_others_right = 6;
 
+Q.ddp_left_ddp = 10
+Q.ddp_right_ddp = 10
+Q.ddp_pacifist_ddp = 40
+Q.ddp_nationalism_ddp = 10
+Q.ddp_work_left_ddp = 30
+Q.ddp_work_right_ddp = 10
+
 Q.adjustmentFactors_spd = 1.0;
 Q.adjustmentFactors_sapd = 1.0;
 Q.adjustmentFactors_kpd = 1.0;
