@@ -47,6 +47,14 @@
         window.dendryUI.dendryEngine.goToScene('state_affairs');
     }
   };
+
+  window.showDDPfrac = function() {
+    if (window.dendryUI.dendryEngine.state.sceneId.startWith('ddp_faction_parliament')) {
+        window.dendryUI.dendryEngine.goToScene('backSpecialScene');
+    } else {
+        window.dendryUI.dendryEngine.goToScene('ddp_faction_parliament');
+    }
+  };
   
   window.showMods = function() {
     window.hideOptions();
