@@ -2,7 +2,7 @@ title: DDP parliamentry delegation
 new-page: true
 is-special: true
 on-arrival: {!
-if Q.ddp_start {
+if (Q.ddp_start) {
 Q.ddp_r_faction = ((Q.ddp_r)*(Q.reichstag_size))
 Q.ddp_r_faction = Math.ceil(Q.ddp_r_faction);
 Q.ddp_party_line_lpr = Q.ddp_r_faction
