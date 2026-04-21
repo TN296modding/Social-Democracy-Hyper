@@ -24,6 +24,7 @@ max-cards: 4
 - @govt_ddp
 - @eco_ddp
 - #advisor_ddp
+- @ddp_parliament_viewer
 - @shuffle_leadership_pinned
 
 @main_easy_ddp
