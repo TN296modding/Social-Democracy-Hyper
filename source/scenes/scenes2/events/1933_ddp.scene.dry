@@ -6,7 +6,7 @@ if (Q.works_program && Q.works_program >= 2) {
     Q.inflation += 1
 }
 !}
-tags: event
+tags: event_ddp
 view-if: year = 1933 and month = 1 and ddp_start = 1
 priority: 2
 max-visits: 1
