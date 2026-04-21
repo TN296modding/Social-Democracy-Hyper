@@ -8,7 +8,7 @@ Q.budget -= 2;
 Q.economic_growth -= 1;
 // moved demographic changes to post_event
 !}
-tags: event
+tags: event_ddp
 view-if: year = 1930 and month = 1 and ddp_start = 1
 priority: 2
 max-visits: 1
