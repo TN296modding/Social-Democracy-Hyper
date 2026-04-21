@@ -49,7 +49,7 @@
   };
 
   window.showDDPfrac = function() {
-    if (window.dendryUI.dendryEngine.state.sceneId.startWith('ddp_faction_parliament')) {
+    if (window.dendryUI.dendryEngine.state.sceneId.startsWith('ddp_faction_parliament')) {
         window.dendryUI.dendryEngine.goToScene('backSpecialScene');
     } else {
         window.dendryUI.dendryEngine.goToScene('ddp_faction_parliament');
