@@ -29,6 +29,7 @@ Q.ddp_party_work_right = ((Q.ddp_r_faction)*(Q.ddp_work_right_ddp/20))
 Q.ddp_party_work_left = Math.floor(Q.ddp_party_work_left)
 Q.ddp_party_work_right = Math.floor(Q.ddp_party_work_right)
 Q.ddp_party_line_wlpwr -= ((Q.ddp_party_work_left)+(Q.ddp_party_work_right))
+}
 !}
 
 A dissenting member is one who will vote based on their ideology, rather than the party line, on a decision. This is assuming that the party line doesn't match the ideology in question.
@@ -36,8 +37,10 @@ A dissenting member is one who will vote based on their ideology, rather than th
 - @lpr: View dissenting Left & Right seats
 - @ppn: View dissenting Pacifist & Nationalist seats
 - @wlpwr: View dissenting Party-Cooperation members
+- @root_ddp
 
 @lpr
+view-if: ddp_start
 on-display: {!
 data = [{
     "id": "ddp_l",
@@ -75,9 +78,15 @@ if (window && d3) {
 
 {!<svg id="ddp_faction_parliament_lpr" style="width: 500px; height: 250px;"> </svg>!}
 
-text
+[? if ddp_start = 0 : Not for SPD ?][? if ddp_start : Text ?]
+
+- @optionssss: Continue
+
+@optionssss
+go-to: root_ddp
 
 @ppn
+view-if: ddp_start
 on-display: {!
 data = [{
     "id": "ddp_p",
@@ -115,9 +124,15 @@ if (window && d3) {
 
 {!<svg id="ddp_faction_parliament_ppn" style="width: 500px; height: 250px;"> </svg>!}
 
-text
+[? if ddp_start = 0 : Not for SPD ?][? if ddp_start : Text ?]
+
+- @optionssss: Continue
+
+@optionssss
+go-to: root_ddp
 
 @wlpwr
+view-if: ddp_start
 on-display: {!
 data = [{
     "id": "ddp_wl",
@@ -150,7 +165,6 @@ if (window && d3) {
     parliament.enter.fromCenter(true).smallToBig(true);
     parliament.exit.toCenter(false).bigToSmall(true);
     d3.select("#ddp_faction_parliament_wlpwr").datum(data).call(parliament);
-}
 }
 !}
 
