@@ -76,7 +76,3 @@ card-image: img/portraits/SchmidtRobert.jpg
 is-deck: true
 
 - @economic_policy_ddp
-
-@ddp_parliament_viewer
-title: View Reichstag Delegates
-go-to: ddp_faction_parliament
