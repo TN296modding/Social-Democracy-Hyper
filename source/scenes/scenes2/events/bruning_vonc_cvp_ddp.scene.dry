@@ -3,7 +3,7 @@ subtitle: Chancellor [+ chancellor +] faces a vote of no confidence.
 new-page: true
 view-if: bruning_event_timer = 5 and cvp_formed
 on-arrival: bruning_event_seen = 1
-tags: event
+tags: event_ddp
 max-visits: 1
 
 = Vote of no confidence

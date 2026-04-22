@@ -1,7 +1,7 @@
 title: May Day, 1929
 new-page: true
 subtitle: A <span style="color: #700000;">Communist</span> demonstration
-tags: event
+tags: event_ddp
 view-if: year = 1929 and month = 5 and ddp_start = 1
 priority: 1
 max-visits: 1

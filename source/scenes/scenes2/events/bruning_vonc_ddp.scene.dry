@@ -3,7 +3,7 @@ subtitle: Chancellor [+ chancellor +] faces a vote of no confidence.
 new-page: true
 view-if: bruning_event_timer = 5 and dnvp_ideology == "Radical" and not dnvp_split_2 and not kvp_formed and not bourgeois_coalition >= 50 and not cvp_formed
 on-arrival: bruning_event_seen = 1; judicial_reform -= 1
-tags: event
+tags: event_ddp
 max-visits: 1
 
 = Vote of no confidence

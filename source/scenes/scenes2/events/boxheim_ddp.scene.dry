@@ -5,7 +5,7 @@ view-if: year = 1931 and month == 11 and nsdap_votes >= 24 and investigate_far_r
 on-arrival: boxheim_seen = 1; nazi_urgency += 1; investigate_far_right = 4; hindenburg_angry_bruning -= 10;
 max-visits: 1
 face-image: img/boxheim.jpg
-tags: event
+tags: event_ddp
 
 = The Boxheim Documents
 
