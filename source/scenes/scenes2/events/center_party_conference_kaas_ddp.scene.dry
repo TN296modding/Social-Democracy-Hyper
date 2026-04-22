@@ -20,7 +20,7 @@ if (Q.stegerwald_unlock) {
 
 !}
 max-visits: 1
-tags: event
+tags: event_ddp
 new-page: true
 face-image: img/portraits/Ludwig_Kaas.jpg
 

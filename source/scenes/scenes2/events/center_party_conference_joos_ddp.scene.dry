@@ -10,7 +10,7 @@ if ((Q.spd_in_foreign_time >= 24 && (!Q.reichskonkordat_progress && Q.in_weimar_
 
 !}
 max-visits: 1
-tags: event
+tags: event_ddp
 new-page: true
 face-image: img/portraits/Joseph_Joos.jpg
 

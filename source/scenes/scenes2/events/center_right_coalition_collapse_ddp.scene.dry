@@ -1,7 +1,7 @@
 title: <span style="color: #000000;">Bourgeois</span>-<span style="color: #3E88B3;">Right</span> Government Collapses!
 new-page: true
 subtitle: New elections scheduled
-tags: event
+tags: event_ddp
 view-if: total_bruning_time >= 6 and (in_right_coalition or in_center_right_coalition) and bruning_coalition_dissent >= 4 and bruning_time and not cvp_formed
 on-arrival: pro_republic -= 3
 max-visits: 1

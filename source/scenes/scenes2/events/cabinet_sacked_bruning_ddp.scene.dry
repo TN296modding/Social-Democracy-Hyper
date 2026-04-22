@@ -5,7 +5,7 @@ priority: -1
 new-page: true
 on-arrival: dvp_relation -= 8; ddp_relation -= 4; lvp_relation -= 4; z_relation -= 4; pro_republic -= 3; pro_republic -= 1 if spd_r >= 30; pro_republic -= 1 if weimar_coalition >= 50; coup_progress -= 1; comeback_a = 1
 go-to: bruning_right if (bruning_event_seen or year < 1930) and right_coalition >= 50 and (dnvp_ideology == "Moderate" or dnvp_westarp) and not (year = 1929 and month >= 7); bruning_center_right if (bruning_event_seen or year < 1930) and (center_right_coalition >= 50 and right_coalition < 50) and dnvp_ideology == "Moderate" and not (year = 1929 and month >= 7); bruning_chain if not ((bruning_event_seen or year < 1930) and right_coalition >= 50 and (dnvp_ideology == "Moderate" or dnvp_westarp) and not (year = 1929 and month >= 7)) and not ((bruning_event_seen or year < 1930) and (center_right_coalition >= 50 and right_coalition < 50) and dnvp_ideology == "Moderate" and not (year = 1929 and month >= 7))
-tags: event
+tags: event_ddp
 ### SPD sacked form DDP perspective
 
 = Brüning Sacks Our Ministers!

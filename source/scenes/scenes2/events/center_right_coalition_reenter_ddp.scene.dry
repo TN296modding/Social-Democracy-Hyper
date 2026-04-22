@@ -1,7 +1,7 @@
 title: The <span style="color: #3E88B3;">**DNVP**</span> Rejoins Government
 new-page: true
 subtitle: The center-right coalition is restored.
-tags: event
+tags: event_ddp
 view-if: year = 1930 and young_plan_ratified and was_in_center_right_coalition and spd_toleration and dnvp_ideology == "Moderate" and center_right_coalition >= 50
 on-arrival: still_in_center_right_coalition = 1
 max-visits: 1
