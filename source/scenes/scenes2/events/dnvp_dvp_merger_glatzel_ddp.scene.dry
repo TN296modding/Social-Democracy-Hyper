@@ -2,7 +2,7 @@ title: The <span style="color: #C0A054;">**DVP**</span> merges with the <span st
 subtitle: Glatzel and [+ dnvp_leader +] has reached an agreement.
 view-if: year == 2000
 max-visits: 1
-tags: event
+tags: event_ddp
 priority: 3
 on-display: {!  
     var cardEl = document.createElement('div');  

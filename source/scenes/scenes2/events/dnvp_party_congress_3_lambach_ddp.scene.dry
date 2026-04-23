@@ -36,7 +36,7 @@ if (Q.lambach_points < 3 && !Q.westarp_trigger && !Q.schiele_trigger) {
 
 !}
 max-visits: 1
-tags: event
+tags: event_ddp
 face-image: img/dnvp3.jpg
 new-page: true
 

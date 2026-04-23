@@ -39,7 +39,7 @@ if (Q.bourgeois_parliament && !Q.bourgeois_parliament_ddp) {
 }
 !}
 max-visits: 1
-tags: event
+tags: event_ddp
 face-image: img/ddp.jpg
 new-page: true
 

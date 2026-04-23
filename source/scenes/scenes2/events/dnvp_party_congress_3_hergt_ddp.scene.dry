@@ -3,7 +3,7 @@ subtitle: The economic depression has radicalized the party...
 view-if: year = 1930 and month = 11 and dnvp_leader = "Hergt"
 on-arrival: pro_republic += dnvp_votes if pro_republic < 50
 max-visits: 1
-tags: event
+tags: event_ddp
 face-image: img/dnvp3.jpg
 new-page: true
 

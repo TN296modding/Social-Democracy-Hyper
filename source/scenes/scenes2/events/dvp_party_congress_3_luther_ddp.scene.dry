@@ -24,7 +24,7 @@ if ((Q.dvp_ideology == "Moderate" || Q.dvp_ideology == "Left") && !Q.thiel_unloc
 if (!Q.kardorff_unlock && !Q.thiel_unlock && !Q.glatzel_unlock && !Q.hugo_unlock) Q.kardorff_unlock = 1;
 !}
 max-visits: 1
-tags: event
+tags: event_ddp
 on-display: {!  
     var cardEl = document.createElement('div');  
     cardEl.className = "face-figure2";  

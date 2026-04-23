@@ -2,7 +2,7 @@ title: <span style="color: #3E88B3;">**DNVP**</span> Congress
 subtitle: Westarp has resigned from his position to accept the presidency.
 view-if: president == "Westarp" and dnvp_leader == "Westarp"
 max-visits: 1
-tags: event
+tags: event_ddp
 face-image: img/dnvp_poster_2.jpg
 new-page: true
 

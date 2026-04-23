@@ -19,7 +19,7 @@ if (Q.pro_republic < ((Q.nsdap_votes + Q.dnf_votes + Q.kpd_votes)*2) && Q.true_c
 
 !}
 max-visits: 1
-tags: event
+tags: event_ddp
 face-image: img/dnvp3.jpg
 new-page: true
 

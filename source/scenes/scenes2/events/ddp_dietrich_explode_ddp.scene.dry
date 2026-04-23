@@ -104,7 +104,7 @@ if (!Q.stolper_lead && !Q.heuss_lead_ddp && !Q.maier_lead) {
 
 !}
 max-visits: 1
-tags: event
+tags: event_ddp
 new-page: true
 face-image: img/portraits/dietrich.jpg
 

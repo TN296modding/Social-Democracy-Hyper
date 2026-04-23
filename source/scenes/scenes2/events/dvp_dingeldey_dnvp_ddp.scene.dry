@@ -3,7 +3,7 @@ subtitle: Is there anything "liberal" left in the <span style="color: #C0A054;">
 view-if: papen_time == 5 and not lvp_formed and not bourgeois_parliament and not bourgeois_list and dvp_exist and dvp_leader == "Dingeldey" and dnvp_ideology == "Radical"
 on-arrival: dvp_left += 2 if dvp_relation >= 35; dvp_left += 2 if in_grand_coalition
 max-visits: 1
-tags: event
+tags: event_ddp
 face-image: img/dvpposter.jpg
 new-page: true
 

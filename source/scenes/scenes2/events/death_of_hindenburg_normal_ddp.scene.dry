@@ -4,7 +4,7 @@ new-page: true
 view-if: year = 1934 and month >= 7 and president != "Hindenburg"
 on-arrival: hindenburg_dead = 1
 max-visits: 1
-tags: event
+tags: event_ddp
 on-display: {!  
     var cardEl = document.createElement('div');  
     cardEl.className = "face-figure2";  

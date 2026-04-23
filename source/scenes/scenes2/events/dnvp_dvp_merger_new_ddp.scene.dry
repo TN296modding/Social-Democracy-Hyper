@@ -2,7 +2,7 @@ title: The <span style="color: #C0A054;">**DVP**</span> merges with the [? if dn
 subtitle: [+ dvp_leader +] and [? if dnvp_ideology == "Moderate":[+ dnvp_leader +] ?][? if kvp_formed:[+ kvp_leader +] ?] have reached an agreement.
 view-if: dkp_merger_timer == time
 max-visits: 1
-tags: event
+tags: event_ddp
 priority: 3
 on-display: {!  
     var cardEl = document.createElement('div');  

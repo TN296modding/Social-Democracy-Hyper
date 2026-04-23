@@ -3,7 +3,7 @@ subtitle: Westarp had enough of Hugenberg's antics.
 view-if: year = 1930 and month = 7 and dnvp_leader = "Hugenberg" and not dnvp_split_2 and not hugenberg_reinstated and not kvp_formed and bruning_event_timer == 0
 priority: -1
 max-visits: 1
-tags: event
+tags: event_ddp
 face-image: img/dnvp2.jpg
 new-page: true
 

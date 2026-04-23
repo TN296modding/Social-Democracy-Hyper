@@ -36,7 +36,7 @@ if (Q.ddp_relation >= 50) {
 }
 !}
 max-visits: 1
-tags: event
+tags: event_ddp
 face-image: img/dstp.jpg
 new-page: true
 

@@ -32,7 +32,7 @@ if (!Q.stresemann_reform_yay && !Q.stresemann_reform_nay) {
 }
 !}
 max-visits: 1
-tags: event
+tags: event_ddp
 face-image: img/dvp.jpg
 new-page: true
 
