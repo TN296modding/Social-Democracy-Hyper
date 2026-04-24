@@ -5,7 +5,7 @@ on-arrival: {!
 Q.hindenburg_extension_seen = 1;
 if (!Q.z_in_gov_mini) Q.goerdeler_right_coalition -= (Q.z_r - Q.bvp_r);
 !}
-tags: event
+tags: event_ddp
 view-if: year = 1932 and (month == 1 or month == 2) and rubicon_mini
 priority: 10
 face-image: img/portraits/Hindenburg.jpg

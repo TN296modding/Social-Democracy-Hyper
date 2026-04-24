@@ -15,7 +15,7 @@ on-display: {!
     var contentDiv = document.querySelector("#page #mid_panel #content");
     contentDiv.appendChild(cardEl);
 !}
-tags: event
+tags: event_ddp
 
 = [+ year +] Presidential Elections
 

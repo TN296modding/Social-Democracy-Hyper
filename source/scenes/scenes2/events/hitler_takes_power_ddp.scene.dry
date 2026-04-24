@@ -2,7 +2,7 @@ title: Hitler takes power.
 subtitle: The beginning of the end.
 view-if: (chancellor == nsdap_chancellor or president == "Hitler" or president == "Göring" or president == "Frick" or chancellor_party == "NSDAP") and (not rubicon_mini or president == "Hitler" or president == "Göring" or president == "Frick")
 on-arrival: spd_in_government = 0
-tags: event
+tags: event_ddp
 new-page: true
 
 [? if hitler_deported and president != "Hitler" and chancellor != "Hitler": The first act that Chancellor [+ chancellor +] takes upon assuming office is bringing Adolf Hitler back to Germany, and giving him citizenship and an official cabinet position. ?]
