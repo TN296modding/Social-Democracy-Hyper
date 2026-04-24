@@ -20,7 +20,7 @@ if (Q.pro_republic >= 65) {
 }
 !}
 max-visits: 1
-tags: event
+tags: event_ddp
 face-image: img/dvp.jpg
 new-page: true
 

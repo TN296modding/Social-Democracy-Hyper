@@ -2,7 +2,7 @@ title: <span style="color: #C0A054;">**DVP**</span> & <span style="color: #D3C24
 subtitle: The electoral threshold threatens to push both parties out of parliament.
 view-if: electoral_threshold >= 5 and not lvp_formed and dvp_exist
 max-visits: 1
-tags: event
+tags: event_ddp
 face-image: img/dvp.jpg
 new-page: true
 

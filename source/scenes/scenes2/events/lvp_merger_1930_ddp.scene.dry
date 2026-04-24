@@ -38,7 +38,7 @@ if (Q.spd_votes >= 32) {
 }
 !}
 max-visits: 1
-tags: event
+tags: event_ddp
 priority: 2
 face-image: img/dvp.jpg
 new-page: true

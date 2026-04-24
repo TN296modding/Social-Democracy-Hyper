@@ -1,7 +1,7 @@
 title: Prussian Landtag Referendum
 subtitle: The results have come in.
 new-page: true
-tags: event
+tags: event_ddp
 view-if: year = 1931 and month >= 8 and landtag_ref_signatures_passed
 on-arrival: {!
 if (Q.landtag_ref_dvp && Q.landtag_ref_kpd) {

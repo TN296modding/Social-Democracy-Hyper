@@ -107,7 +107,7 @@ Q.dnvp_angry -= 4;
 !}
 new-page: true
 max-visits: 1
-tags: event
+tags: event_ddp
 
 = Lausanne Conference
 

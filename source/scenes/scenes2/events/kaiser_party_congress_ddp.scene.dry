@@ -4,7 +4,7 @@ view-if: ((year == 1930 and month >= 11) or kaiser_time == time) and z_leader ==
 new-page: true
 on-arrival: pro_republic += 3
 max-visits: 1
-tags: event
+tags: event_ddp
 face-image: img/zentrum_3.jpg
 
 = 1930 [? if z_party_name != "CVP": <span style="color: #000000;">Center Party</span>?][? if z_party_name == "CVP": <span style="color: #000000;">**CVP**</span>?] Conference

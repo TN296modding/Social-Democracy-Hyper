@@ -3,7 +3,7 @@ subtitle: The future of this new party will be decided here.
 view-if: lvp_trigger_2_time == time
 on-arrival: lvp_existence_timer = 0
 max-visits: 1
-tags: event
+tags: event_ddp
 face-image: img/weimar_coalition_3.jpg
 new-page: true
 

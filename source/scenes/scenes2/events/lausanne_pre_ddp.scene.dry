@@ -2,7 +2,7 @@ title: Brüning's Dilemma
 subtitle: An international reparations congress at Lausanne is scheduled this month.
 view-if: (year == 1932 and month >= 1 and month < 4) and (reparations == -2 or hoover_moratorium_seen or banking_crisis_seen) and bruning_time and not reparations_resolved
 max-visits: 1
-tags: event
+tags: event_ddp
 new-page: true
 on-display: {!  
     var cardEl = document.createElement('div');  

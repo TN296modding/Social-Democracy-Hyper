@@ -2,7 +2,7 @@ title: First <span style="color: #FFCC00;">**LVP**</span> Congress
 subtitle: The future of this new party will be decided here.
 view-if: lvp_trigger_1_time == time
 max-visits: 1
-tags: event
+tags: event_ddp
 face-image: img/weimar_coalition_3.jpg
 new-page: true
 

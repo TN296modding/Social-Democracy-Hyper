@@ -17,7 +17,7 @@ if (Q.free_kpd_goal_prussia <= 0) {
 Q.kpd_goals_seen_prussia = 0
 !}
 new-page: true
-tags: event
+tags: event_ddp
 go-to: goals_success if kpd_goals_completed_prussia >= 4; goals_failed if kpd_goals_completed_prussia < 4
 
 = <span style="color: #700000;">**KPD**</span> Goals

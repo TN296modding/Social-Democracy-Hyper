@@ -1,7 +1,7 @@
 title: 1932 French Legislative Elections
 view-if: year == 1932 and month == 5
 new-page: true
-tags: event
+tags: event_ddp
 on-arrival: france_left_seen = 1
 priority: 3
 on-display: {!  

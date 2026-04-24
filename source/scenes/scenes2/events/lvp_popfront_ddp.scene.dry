@@ -19,7 +19,7 @@ if (Q.lvp_formed) {
 }
 !}
 view-if: ((in_popular_front and ddp_in_popular_front and not constructive_vonc) or (in_popular_front_prussia and ddp_in_popular_front_prussia)) and lvp_formed 
-tags: event
+tags: event_ddp
 
 = The <span style="color: #FFCC00;">**LVP**</span> leaves the Popular Front government!
 

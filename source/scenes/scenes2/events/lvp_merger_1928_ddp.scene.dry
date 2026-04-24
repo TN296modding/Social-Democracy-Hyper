@@ -2,7 +2,7 @@ title: <span style="color: #C0A054;">**DVP**</span> Congress
 subtitle: The future of the liberal movement will be decided here.
 view-if: lvp_merger_timer == 1
 max-visits: 1
-tags: event
+tags: event_ddp
 face-image: img/dvp.jpg
 new-page: true
 
