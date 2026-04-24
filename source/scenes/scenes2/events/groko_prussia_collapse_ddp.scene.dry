@@ -10,7 +10,7 @@ if (Q.in_social_catholic_coalition_prussia || Q.in_social_liberal_coalition_prus
     Q.spd_prussia = 0;
 }
 !}
-tags: event
+tags: event_ddp
 face-image: img/prussia_flag_old.png
 go-to: aftermath_menu
 

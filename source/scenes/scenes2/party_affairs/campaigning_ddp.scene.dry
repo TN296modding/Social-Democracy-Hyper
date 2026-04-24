@@ -1,6 +1,6 @@
 title: Campaigning
 new-page: true
-view-if: campaigning_timer <= 0
+view-if: campaigning_timer <= 0 and ddp_start = 1
 on-arrival: month_actions += 1;
 is-card: true
 card-image: img/DDP_campaign.png

@@ -1,6 +1,6 @@
 title: Inter-Party Relationships
 new-page: true
-view-if: inter_party_relationships_timer <= 0
+view-if: inter_party_relationships_timer <= 0 and ddp_start
 tags: party_affairs_ddp
 is-card: true
 on-arrival: month_actions += 1; inter_party_relationships_timer = 4;
