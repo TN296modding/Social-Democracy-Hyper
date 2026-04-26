@@ -844,6 +844,30 @@ th {
   fill: #e3d04f
 }
 
+.seat.ddp_party_pacifist {
+  fill: #FF6699;
+}
+
+.seat.ddp_party_line_ppn {
+  fill: #7FCEB1;
+}
+
+.seat.ddp_party_nationalism {
+  fill: #ADC1FD;
+}
+
+.seat.ddp_party_work_left {
+  fill: #ff0000;
+}
+
+.seat.ddp_party_line_wlpwr {
+  fill: #D3C24D
+}
+
+.seat.ddp_party_work_right {
+  fill:olivedrab
+}
+
 .tooltip-text {
   text-decoration: underline;
   text-decoration-style: dotted;
