@@ -131,7 +131,7 @@ Q.chrun_tot_perc_dis = (Q.chrun_tot_perc * 100).toFixed(3);
 
 = Inter-party Relations
 
-[? if ddp_start : <span style="color: #c90000;">**SPD</span> [+ spd_relation : relationships+]?]
+[? if ddp_start : <span style="color: #c90000;">**SPD**</span> [+ spd_relation : relationships +] ?]
 
 [? if z_party_name != "CVP": <span class="tooltip-text" title="Center Party" style="color: #000000;">**[+ z_party_name +]**</span>?][? if z_party_name == "CVP": <span class="tooltip-text" title="Christian People's Party" style="color: #000000;">**[+ z_party_name +]**</span>?]: [+ z_relation : relationships +]
 
