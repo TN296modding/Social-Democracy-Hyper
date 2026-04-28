@@ -30,7 +30,7 @@ subtitle: -0.5 budget
 unavailable-subtitle: Not enough budget
 choose-if: budget >= 0.5
 view-if: (trun_ind_perc + trun_nmc_perc + trun_rur_perc + iww_ind_perc + iww_nmc_perc + iww_rur_perc + iww_unm_perc + chrun_tot_perc) < 0.12 and union_ddcs = 0
-on-arrival: budget -= 0.5; trun_ind_perc += 0.03; trun_nmc_perc += 0.007; trun_rur_perc += 0.015; iww_ind_perc += 0.004 if syndicalism = 1; iww_nmc_perc += 0.003 if syndicalism = 1; iww_rur_perc += 0.003 if syndicalism = 1; iww_unm_perc += 0.004 if syndicalism = 1; chrun_tot_perc += 0.02; union_ddcs = 1;
+on-arrival: budget -= 0.5; trun_ind_perc += 0.03; trun_nmc_perc += 0.007; trun_rur_perc += 0.015; iww_ind_perc += 0.004 if syndicalism = 1; iww_nmc_perc += 0.003 if syndicalism = 1; iww_rur_perc += 0.003 if syndicalism = 1; iww_unm_perc += 0.004 if syndicalism = 1; chrun_tot_perc += 0.02; union_ddcs += 1;
 
 Description
 
@@ -40,7 +40,7 @@ subtitle: -1 budget
 unavailable-subtitle: Not enough budget
 choose-if: budget >= 1
 view-if: (trun_ind_perc + trun_nmc_perc + trun_rur_perc + iww_ind_perc + iww_nmc_perc + iww_rur_perc + iww_unm_perc + chrun_tot_perc) > 0.12 and union_ddcs = 0
-on-arrival: budget -= 1; trun_ind_perc += 0.015; trun_nmc_perc += 0.009; trun_rur_perc += 0.03; iww_ind_perc += 0.006 if syndicalism = 1; iww_nmc_perc += 0.004 if syndicalism = 1; iww_rur_perc += 0.006 if syndicalism = 1; iww_unm_perc += 0.007 if syndicalism = 1; chrun_tot_perc += 0.03;
+on-arrival: budget -= 1; trun_ind_perc += 0.015; trun_nmc_perc += 0.009; trun_rur_perc += 0.03; iww_ind_perc += 0.006 if syndicalism = 1; iww_nmc_perc += 0.004 if syndicalism = 1; iww_rur_perc += 0.006 if syndicalism = 1; iww_unm_perc += 0.007 if syndicalism = 1; chrun_tot_perc += 0.03; union_ddcs += 1;
 
 Description
 
@@ -50,7 +50,7 @@ subtitle: -1.5 budget
 unavailable-subtitle: Not enough budget
 choose-if: budget >= 1.5
 max-visits: 1
-on-arrival: budget -= 1.5; charity += 2; new_middle_spd += 4; old_middle_spd += 4; unemployed_spd += 2; left_dissent += 8; center_dissent += 6; labour_dissent += 2; dvp_left += 2; ddp_left += 4; lvp_left += 3; ddp_relation += 10; dvp_relation += 7; z_relation += 5; kpd_relation -= 12; ddp_cohesion += 1; inflation += 0.2; economic_growth += 0.2;
+on-arrival: budget -= 1.5; charity += 2; new_middle_spd += 4; old_middle_spd += 4; unemployed_spd += 2; left_dissent += 8; center_dissent += 6; labour_dissent += 2; dvp_left += 2; ddp_left += 4; lvp_left += 3; ddp_relation += 10; dvp_relation += 7; z_relation += 5; kpd_relation -= 12; ddp_cohesion += 1; inflation += 0.2; economic_growth += 0.2; ucc_ddc += 1;
 
 description
 
@@ -60,7 +60,7 @@ subtitle: -1 budget
 unavailable-subtitle: Not enough budget
 choose-if: budget >= 1
 max-visits: 2
-on-arrival: welfare_cost -= 0.25 if ucwddc = 0; welfare_cost -= 0.15 if ucwddc = 1; z_relation += 3; ddp_relation += 3; dvp_relation += 3; ddp_left += 1; dvp_left += 1; lvp_left += 1; left_dissent += 4; center_dissent += 2; labour_dissent -= 2; reformist_dissent -= 4;
+on-arrival: welfare_cost -= 0.25 if ucwddc = 0; welfare_cost -= 0.15 if ucwddc = 1; z_relation += 3; ddp_relation += 3; dvp_relation += 3; ddp_left += 1; dvp_left += 1; lvp_left += 1; left_dissent += 4; center_dissent += 2; labour_dissent -= 2; reformist_dissent -= 4; ucwddc += 1
 
 description
 
@@ -69,7 +69,7 @@ subtitle: -1 budget
 unavailable-subtitle: Not enough budget
 choose-if: budget >= 1
 max-visits: 1
-on-arrival: budget -= 1; charity += 1; workers_spd += 3; unemployed_spd += 3; ddp_relation += 5; z_relation += 2; dvp_relation -= 3; ddp_left += 1; dvp_right -= 1; new_middle_spd += 2; catholics_spd += 1;
+on-arrival: budget -= 1; charity += 1; workers_spd += 3; unemployed_spd += 3; ddp_relation += 5; z_relation += 2; dvp_relation -= 3; ddp_left += 1; dvp_right -= 1; new_middle_spd += 2; catholics_spd += 1; vol_ddc += 1
 
 description
 
@@ -78,7 +78,7 @@ subtitle: -1 budget
 unavailable-subtitle: Not enough budget
 choose-if: budget >= 1
 max-visits: 1
-on-arrival: budget -= 1; old_middle_spd += 5; new_middle_spd += 3; ddp_relation += 12; z_relation += 5; dvp_relation += 15; ddp_left += 1; dvp_left += 3; ddp_cohesion += 1;
+on-arrival: budget -= 1; old_middle_spd += 5; new_middle_spd += 3; ddp_relation += 12; z_relation += 5; dvp_relation += 15; ddp_left += 1; dvp_left += 3; ddp_cohesion += 1; nbc_ddc += 1
 
 Description
 
@@ -87,7 +87,7 @@ subtitle: -1 budget
 unavailable-subtitle: Not enough budget
 choose-if: budget >= 1
 max-visits: 1
-on-arrival: budget -= 1; cooperatives += 1; workers_spd += 5; unemployed_spd += 2; labor_dissent -= 7; center_dissent -= 7; left_dissent -= 7; reformist_dissent -= 7; dvp_right += 1 if dvp_right + 5 > dvp_left; dvp_left += 1 if dvp_left + 5 > dvp_right; ddp_left += 1;
+on-arrival: budget -= 1; cooperatives += 1; workers_spd += 5; unemployed_spd += 2; labor_dissent -= 7; center_dissent -= 7; left_dissent -= 7; reformist_dissent -= 7; dvp_right += 1 if dvp_right + 5 > dvp_left; dvp_left += 1 if dvp_left + 5 > dvp_right; ddp_left += 1; cpc_ddc += 1
 
 dsecription
 
@@ -97,6 +97,6 @@ subtitle: -2 budget
 unavailable-subtitle: Not enough budget
 choose-if: budget >= 2
 max-visits: 1
-on-arrival: workers_spd += 7; unemployed_spd += 7; rural_spd += 1; catholics_spd += 1; z_relation -= 10; dvp_relation -= 15; ddp_relation -= 5; dvp_right += 3; ddp_right += 1; lvp_right += 2; ddp_cohesion -= 2
+on-arrival: workers_spd += 7; unemployed_spd += 7; rural_spd += 1; catholics_spd += 1; z_relation -= 10; dvp_relation -= 15; ddp_relation -= 5; dvp_right += 3; ddp_right += 1; lvp_right += 2; ddp_cohesion -= 2; ite_ddc += 1
 
 Description
