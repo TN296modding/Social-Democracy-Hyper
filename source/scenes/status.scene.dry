@@ -253,21 +253,21 @@ Q.chrun_tot_perc_dis = (Q.chrun_tot_perc * 100).toFixed(3);
 
 = Internal Factions of the <span style="color: #c00000;">**SPD**</span>
 
-{!<span class="tooltip-text" title="The Left is interested in radical, transformative policies and cooperation with the KPD.">Left</span>!} strength: [+ left_strength : strength +], dissent: [+ left_dissent : dissent +]
+<span style="color: #5b0303;">**Left**</span> strength: [+ left_strength : strength +], dissent: [+ left_dissent : dissent +]
 
-{!<span class="tooltip-text" title="The Center is a faction of Center Marxists, between reform and revolution.">Center</span>!} strength: [+ center_strength : strength +], dissent: [+ center_dissent : dissent +]
+<span style="color: #9b0000;">**Center**</span> strength: [+ center_strength : strength +], dissent: [+ center_dissent : dissent +]
 
-{!<span class="tooltip-text" title="Labor's goal is economic reform and benefits for organized workers.">Labor</span>!} strength: [+ labor_strength : strength +], dissent: [+ labor_dissent : dissent +]
+<span style="color: #dd6400;">**Labor**</span> strength: [+ labor_strength : strength +], dissent: [+ labor_dissent : dissent +]
 
-{!<span class="tooltip-text" title="Reformists are pragmatic participants in government, and seek to expand the welfare state and defend democracy.">Reformist</span>!} strength: [+ reformist_strength : strength +], dissent: [+ reformist_dissent : dissent +]
+<span style="color: #f0b9ca;">**Reformist**</span> strength: [+ reformist_strength : strength +], dissent: [+ reformist_dissent : dissent +]
 
-{!<span class="tooltip-text" title="Left Nationalists are in favour of Social Democratic policies, in a similar vein to the reformists, however they also have views which are much more socially right-wing. They split from the SPD in 1926 to form the ASPD">Left Nationals</span>!} [? if aspd_j_spd = 1 : Status: ASPD Rejoined ?] [? if aspd_j_spd = 0 : Status: ASPD Independent ?] strength: [+ left_nat_strength : strength +], dissent: [+ left_nat_dissent : dissent +]
+Left Nationals [? if aspd_j_spd = 1 : Status: ASPD Rejoined ?] [? if aspd_j_spd = 0 : Status: ASPD Independent ?] strength: [+ left_nat_strength : strength +], dissent: [+ left_nat_dissent : dissent +]
 
-Seeheimer Kreis (Business) [? if business_j_spd = 0 : Status: Not Formed; ?] [? if business_j_spd = 1 : Status: Forming; ?] [? if business_j_spd = 2: Formed; ?] strength: [+ business_strength : strength +], dissent: [+ business_dissent : dissent +] 
+<span style="color: #acacac;">**Seeheimer Kreis**</span> (Business) [? if business_j_spd = 0 : Status: Not Formed; ?] [? if business_j_spd = 1 : Status: Forming; ?] [? if business_j_spd = 2: Formed; ?] strength: [+ business_strength : strength +], dissent: [+ business_dissent : dissent +] 
 
 <span style=" color: #228B22;">Agrarian</span> <span style=" color: #c90000;">Socialist</span> (Rural) [? if rural_j_spd = 0 : Status: Support Base; ?] [? if rural_j_spd = 1 : Status: Faction; ?] strength: [+ rural_strength : strength +], dissent: [+ rural_dissent : dissent +]
 
-Social Liberal (Liberal) [? if ddp_j_spd = 0 : Status: DDP faction; ?] [? if ddp_j_spd = 1 : Status: SPD Faction; ?] strength: [+ liberal_strength : strength +], dissent: [+ liberal_dissent : dissent +]
+Social Liberal [? if ddp_j_spd = 0 : Status: DDP faction; ?] [? if ddp_j_spd = 1 : Status: SPD Faction; ?] strength: [+ liberal_strength : strength +], dissent: [+ liberal_dissent : dissent +]
 
 Right Communists [? if kpo_j_spd = 0 and (( year = 1929 and month <= 6) or ( year < 1929 ))  : Status: KPD Faction; ?] [? if kpo_j_spd = 0 and (( year = 1929 and month >= 7) or (year >= 1930)) : Status: Kommunistische Partei Deutschlands (Opposition) ;; KPD(O); ?] [? if kpo_j_spd = 1 and spd_dom_sed = 1 : Status: SED Faction; ?] [? if kpo_j_spd = 1 and sed_formed = 0: SPD Faction; ?] strength: [+ rightcom_strength : strength +], dissent: [+ rightcom_dissent : dissent +]
 
@@ -656,7 +656,7 @@ Justice & Policing:
 
     Banned Paramilitaries: [? if paramilitaries_banned = 0 : None ?][? if paramilitaries_banned > 0 : [? if rfb_banned : RFB, ?][? if sh_banned : SH, ?][? if sa_banned : SA ?]?]
 
-    ###Judiciary Reform: [ judiciary_reform : judiciary_reform_status ]
+    Judiciary Reform: [+ judiciary_reform : judiciary_reform_status +]
 
 Economic Policy
 
@@ -688,11 +688,11 @@ Social Welfare
 
     Unemployment Insurance: [+ ui_funding : ui_status +]
 
-    Pension Plan: [+ gpp : gpp_status +]
+    Government Pension Plan: [+ gpp : welfare_status +]
 
 Transport
 
-    Transport Infrastructure: [+ infrastructure : infra_status +]
+    Transport Infrastructure: [ infrastructure : infra_status ]
 
     Free Transport: [? if free_trains = 1 : Yes ?][? if free_trains = 0 : No ?]
 
@@ -720,9 +720,9 @@ Versailles:
 
 Minority Rights:
 
-    Women's Working Rights: [+ womens_work : womens_work_status +]
+    Women's Working Rights: [ womens_work : womens_work_status ]
 
-    Women's Family Rights: [+ family_law P family_law_status +]
+    Women's Family Rights: [ family_law : family_law_status ]
 
     Womens's Welfare: 
 
