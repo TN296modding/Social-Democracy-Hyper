@@ -1,0 +1,9 @@
+
+(..-3) None - Political & Economic
+(-2.9..-2) Minor - Political, None - Economic
+(-1.9..-1) Some - Political, None - Economic
+(-0.9..0) Plenty - Political, Minor - Economic
+(0.1..1) Plenty - Political, Some - Economic
+(1.1..2) Plenty - Political, Plenty - Economic
+(2.1..3) Plenty - Political, Major - Economic
+(3.1..) Major - Political, Complete - Economic
