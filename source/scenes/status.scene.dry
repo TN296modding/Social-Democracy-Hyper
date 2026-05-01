@@ -261,7 +261,7 @@ Q.chrun_tot_perc_dis = (Q.chrun_tot_perc * 100).toFixed(3);
 
 <span style="color: #f0b9ca;">**Reformist**</span> strength: [+ reformist_strength : strength +], dissent: [+ reformist_dissent : dissent +]
 
-<span style="color: #fe9e00;">**Left Nationals</span> [? if aspd_j_spd = 1 : Status: ASPD Rejoined ?] [? if aspd_j_spd = 0 : Status: ASPD Independent ?] strength: [+ left_nat_strength : strength +], dissent: [+ left_nat_dissent : dissent +]
+<span style="color: #fe9e00;">**Left Nationals**</span> [? if aspd_j_spd = 1 : Status: ASPD Rejoined ?] [? if aspd_j_spd = 0 : Status: ASPD Independent ?] strength: [+ left_nat_strength : strength +], dissent: [+ left_nat_dissent : dissent +]
 
 <span style="color: #acacac;">**Seeheimer Kreis**</span> (Business) [? if business_j_spd = 0 : Status: Not Formed; ?] [? if business_j_spd = 1 : Status: Forming; ?] [? if business_j_spd = 2: Formed; ?] strength: [+ business_strength : strength +], dissent: [+ business_dissent : dissent +] 
 
